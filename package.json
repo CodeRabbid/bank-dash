@@ -1,7 +1,7 @@
 {
   "homepage": "http://CodeRabbid.github.io/bank-dash",
   "name": "bank-dash",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
