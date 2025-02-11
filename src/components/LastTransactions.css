@@ -1,7 +1,7 @@
 .last-transaction-frame {
   background: white;
   display: block;
-  width: calc(100%-20px);
+  width: calc(100% - 20px);
   max-width: 800px;
   padding: 10px;
   border-radius: 23px;
