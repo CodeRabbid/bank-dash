@@ -5,6 +5,7 @@ import RecentTransactionsShort from "../components/RecentTransactionsShort.jsx";
 import WeeklyActicityDiagram from "../components/WeeklyActivityDiagramm";
 import ExpenseStatisticsChart from "../components/ExpenseStatisticsChart";
 import QuickTransfers from "../components/QuickTransfers";
+import BalanceHistory from "../components/BalanceHistory";
 
 export default function DashboardScreen() {
   return (
@@ -54,6 +55,18 @@ export default function DashboardScreen() {
             <div className="quick-transfer-frame">
               <div className="quick-transfer-container">
                 <QuickTransfers />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="box balance-history">
+          <div>
+            <div className="top-banner">
+              <h2>Balance History</h2>
+            </div>
+            <div className="quick-transfer-frame">
+              <div className="balance-history-container">
+                <BalanceHistory />
               </div>
             </div>
           </div>
