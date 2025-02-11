@@ -1,0 +1,57 @@
+.transactions-table .table-row {
+  display: table-row;
+  height: 55px;
+}
+
+.transactions-table .first-cell {
+  height: 40px;
+  width: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.transactions-table .round-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transactions-table .second-cell {
+  height: 40;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.transactions-table .second-cell .flex-container {
+  height: 40px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.transactions-table .second-cell .flex-container .memo {
+  color: #232323;
+  font-size: 13px;
+  margin: 4px 3px 3px 9px;
+}
+
+.transactions-table .second-cell .flex-container .date {
+  color: #718ebf;
+  font-size: 12px;
+  margin: 0px 3px 3px 9px;
+}
+
+.transactions-table .third-cell {
+  height: 40px;
+  width: 46px;
+  font-size: 12px;
+  display: table-cell;
+  vertical-align: middle;
+}
