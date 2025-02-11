@@ -5,6 +5,7 @@ import SavingIcon from "../assets/saving-icon.svg";
 import IncomeIcon from "../assets/income-icon.svg";
 import ExpenseIcon from "../assets/expense-icon.svg";
 import LastTransactions from "../components/LastTransactions";
+import CreditCard from "../components/CreditCard";
 
 const USDollar = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -40,6 +41,15 @@ export default function AccountsScreen() {
             <h2>Last Transaction</h2>
           </div>
           <LastTransactions />
+        </div>
+        <div className="box my-cards" style={{ maxWidth: 250 }}>
+          <div className="top-banner">
+            <h2>My Card</h2>
+            <h3>See All</h3>
+          </div>
+          <div className="cards">
+            <CreditCard theme="dark-blue" />
+          </div>
         </div>
       </div>
     </>
