@@ -1,0 +1,54 @@
+.small-section-frame {
+  flex-grow: 1;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  max-width: 220px;
+  padding: 15px;
+  align-items: center;
+  gap: 5px;
+}
+
+.four-small-sections {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.two-small-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.small-section-title {
+  color: #718ebf;
+  padding: 3px;
+  font-size: 14px;
+}
+
+.small-section-amount {
+  color: #232323;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Inter";
+}
+
+.debit-credit-overview {
+  min-width: 200px;
+  max-width: 520px;
+}
+
+.debit-credit-overview-frame {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  align-items: center;
+  gap: 5px;
+}
+
+.invoices-sent {
+  max-width: 400px;
+}
