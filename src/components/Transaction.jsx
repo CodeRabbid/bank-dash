@@ -1,4 +1,5 @@
 import "./Transaction.css";
+import RecentTransactions from "../components/RecentTransactions.jsx";
 
 const Transaction = ({ memo, date, amount, positive, Logo, logoColor }) => {
   return (
@@ -26,6 +27,14 @@ const Transaction = ({ memo, date, amount, positive, Logo, logoColor }) => {
         }}
       >
         <div style={{ display: "flex" }}>{amount}</div>
+      </div>
+      <div className="box recent-transactions">
+        <div className="top-banner">
+          <h2>Recent Transactions</h2>
+        </div>
+        <div className="recent-transactions-tabs">
+          <RecentTransactions />
+        </div>
       </div>
     </div>
   );

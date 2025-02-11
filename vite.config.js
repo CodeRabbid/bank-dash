@@ -10,5 +10,8 @@ export default defineConfig({
       svgrOptions: {},
     }),
   ],
+  optimizeDeps: {
+    include: ["@emotion/styled"],
+  },
   base: "",
 });

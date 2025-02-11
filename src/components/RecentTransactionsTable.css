@@ -1,0 +1,13 @@
+.receipt-button {
+  background-color: white;
+  height: 35px;
+  width: 100px;
+  border-radius: 18px;
+  border: solid 1px #123288;
+  color: #123288;
+}
+
+.receipt-button:hover {
+  border: solid 1px #1814f3;
+  color: #1814f3;
+}
