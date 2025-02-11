@@ -21,7 +21,7 @@ import SettingsScreen from "./screens/SettingsScreen.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index={true} path="/" element={<DashboardScreen />} />
+      {/* <Route index={true} path="/" element={<DashboardScreen />} />
       <Route path="/transactions" element={<TransactionsScreen />} />
       <Route path="/accounts" element={<AccountsScreen />} />
       <Route path="/investments" element={<InvestmentsScreen />} />
@@ -29,14 +29,14 @@ const router = createBrowserRouter(
       <Route path="/loans" element={<LoansScreen />} />
       <Route path="/services" element={<ServicesScreen />} />
       <Route path="/privileges" element={<MyPrivilegesScreen />} />
-      <Route path="/settings" element={<SettingsScreen />} />
+      <Route path="/settings" element={<SettingsScreen />} /> */}
     </Route>
   )
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <RouterProvider router={router} /> */}
-    <>Hello World</>
+    <RouterProvider router={router} />
+    {/* <>Hello World</> */}
   </React.StrictMode>
 );
