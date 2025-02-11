@@ -20,7 +20,7 @@ import SettingsScreen from "./screens/SettingsScreen.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
+    <Route path="/bank-dash/" element={<App />}>
       {/* <Route index={true} path="/" element={<DashboardScreen />} />
       <Route path="/transactions" element={<TransactionsScreen />} />
       <Route path="/accounts" element={<AccountsScreen />} />
