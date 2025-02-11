@@ -16,55 +16,55 @@ export default function SideMenu({ toggleDisplaySidMenu }) {
     <nav className="side-menu">
       <ul style={{ marginTop: 8 }}>
         <SideMenuButton
-          path="/bank-dash/"
+          path="/"
           Icon={HomeIcon}
           text="Dashboard"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/bank-dash/transactions"
+          path="/transactions"
           Icon={TransferIcon}
           text="Transactions"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/bank-dash/accounts"
+          path="/accounts"
           Icon={UserIcon}
           text="Accounts"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/bank-dash/investments"
+          path="/investments"
           Icon={InvestmentIcon}
           text="Investments"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/bank-dash/creditcards"
+          path="/creditcards"
           Icon={CreditCardIcon}
           text="Credit Cards"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/bank-dash/loans"
+          path="/loans"
           Icon={LoansIcon}
           text="Loans"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/bank-dash/services"
+          path="/services"
           Icon={ServiceIcon}
           text="Services"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/bank-dash/privileges"
+          path="/privileges"
           Icon={EconomicsIcon}
           text="My Privileges"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/bank-dash/settings"
+          path="/settings"
           Icon={SettingsSolidIcon}
           text="Settings"
           toggleDisplaySidMenu={toggleDisplaySidMenu}

@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -18,18 +18,18 @@ import ServicesScreen from "./screens/ServicesScreen.jsx";
 import MyPrivilegesScreen from "./screens/MyPrivilegesScreen.jsx";
 import SettingsScreen from "./screens/SettingsScreen.jsx";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
-    <Route path="/bank-dash" element={<App />}>
-      <Route index={true} path="/bank-dash/" element={<DashboardScreen />} />
-      <Route path="/bank-dash/transactions" element={<TransactionsScreen />} />
-      <Route path="/bank-dash/accounts" element={<AccountsScreen />} />
-      <Route path="/bank-dash/investments" element={<InvestmentsScreen />} />
-      <Route path="/bank-dash/creditcards" element={<CreditCardsScreen />} />
-      <Route path="/bank-dash/loans" element={<LoansScreen />} />
-      <Route path="/bank-dash/services" element={<ServicesScreen />} />
-      <Route path="/bank-dash/privileges" element={<MyPrivilegesScreen />} />
-      <Route path="/bank-dash/settings" element={<SettingsScreen />} />
+    <Route path="/" element={<App />}>
+      <Route index={true} path="/" element={<DashboardScreen />} />
+      <Route path="/transactions" element={<TransactionsScreen />} />
+      <Route path="/accounts" element={<AccountsScreen />} />
+      <Route path="/investments" element={<InvestmentsScreen />} />
+      <Route path="/creditcards" element={<CreditCardsScreen />} />
+      <Route path="/loans" element={<LoansScreen />} />
+      <Route path="/services" element={<ServicesScreen />} />
+      <Route path="/privileges" element={<MyPrivilegesScreen />} />
+      <Route path="/settings" element={<SettingsScreen />} />
     </Route>
   )
 );
@@ -37,6 +37,5 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    {/* <>Hello World</> */}
   </React.StrictMode>
 );
