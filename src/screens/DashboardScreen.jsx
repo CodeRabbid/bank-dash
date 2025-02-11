@@ -3,6 +3,7 @@ import React from "react";
 import CreditCard from "../components/CreditCard.jsx";
 import RecentTransactionsShort from "../components/RecentTransactionsShort.jsx";
 import WeeklyActicityDiagram from "../components/WeeklyActivityDiagramm";
+import ExpenseStatisticsChart from "../components/ExpenseStatisticsChart";
 
 export default function DashboardScreen() {
   return (
@@ -31,6 +32,16 @@ export default function DashboardScreen() {
           <div className="bar-chart-frame">
             <div className="bar-chart-container">
               <WeeklyActicityDiagram />
+            </div>
+          </div>
+        </div>
+        <div className="box expense-statistics">
+          <div className="top-banner">
+            <h2>Espense Statistics</h2>
+          </div>
+          <div className="pie-chart-frame">
+            <div className="pie-chart-container">
+              <ExpenseStatisticsChart />
             </div>
           </div>
         </div>
