@@ -16,55 +16,55 @@ export default function SideMenu({ toggleDisplaySidMenu }) {
     <nav className="side-menu">
       <ul style={{ marginTop: 8 }}>
         <SideMenuButton
-          path="/"
+          path="/bank-dash/"
           Icon={HomeIcon}
           text="Dashboard"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/transactions"
+          path="/bank-dash/transactions"
           Icon={TransferIcon}
           text="Transactions"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/accounts"
+          path="/bank-dash/accounts"
           Icon={UserIcon}
           text="Accounts"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/investments"
+          path="/bank-dash/investments"
           Icon={InvestmentIcon}
           text="Investments"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/creditcards"
+          path="/bank-dash/creditcards"
           Icon={CreditCardIcon}
           text="Credit Cards"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/loans"
+          path="/bank-dash/loans"
           Icon={LoansIcon}
           text="Loans"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/services"
+          path="/bank-dash/services"
           Icon={ServiceIcon}
           text="Services"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/privileges"
+          path="/bank-dash/privileges"
           Icon={EconomicsIcon}
           text="My Privileges"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/settings"
+          path="/bank-dash/settings"
           Icon={SettingsSolidIcon}
           text="Settings"
           toggleDisplaySidMenu={toggleDisplaySidMenu}
@@ -75,8 +75,8 @@ export default function SideMenu({ toggleDisplaySidMenu }) {
 }
 
 const SideMenuButton = ({ path, Icon, text, toggleDisplaySidMenu }) => {
-  const classNameFunc = ({ isActive }) =>
-    isActive ? "sidebar-button active" : "sidebar-button";
+  const classNameFunc = () =>
+    location.pathname === path ? "sidebar-button active" : "sidebar-button";
 
   const location = useLocation();
   return (
