@@ -6,6 +6,7 @@ import IncomeIcon from "../assets/income-icon.svg";
 import ExpenseIcon from "../assets/expense-icon.svg";
 import LastTransactions from "../components/LastTransactions";
 import CreditCard from "../components/CreditCard";
+import DebitCreditOverview from "../components/DebitCreditOverview.jsx";
 
 const USDollar = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -49,6 +50,14 @@ export default function AccountsScreen() {
           </div>
           <div className="cards">
             <CreditCard theme="dark-blue" />
+          </div>
+        </div>
+        <div className="box debit-credit-overview">
+          <div className="top-banner">
+            <h2>Debit & Credit Overview</h2>
+          </div>
+          <div className="box debit-credit-overview-frame">
+            <DebitCreditOverview />
           </div>
         </div>
       </div>
