@@ -1,0 +1,60 @@
+.cards-container {
+  width: 495px;
+  height: 282px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.credit-card {
+  min-width: 232px;
+  height: 171px;
+  border-radius: 22px;
+  background-image: linear-gradient(135deg, #4c49ed, #0a06f4);
+  position: relative;
+}
+
+.light {
+  background: white;
+  border: 1px solid #dfeaf2;
+}
+
+.card-top-content {
+  margin: 17px 19px 10px 20px;
+}
+
+.card-bottom {
+  background: linear-gradient(white, transparent);
+  opacity: 0.15;
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-bottom-content {
+  margin: 17px 19px 10px 20px;
+}
+
+.credit-card.light div {
+  color: #343c6a;
+}
+
+.credit-card.light div.title {
+  color: #718ebf;
+}
+
+.credit-card.light .card-bottom {
+  background: white;
+  border-top: 2px solid #dfeaf2;
+}
+
+.credit-card div {
+  font-family: "Lato";
+  color: white;
+}

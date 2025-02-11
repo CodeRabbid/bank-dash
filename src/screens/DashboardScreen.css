@@ -1,0 +1,95 @@
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 3px;
+  color: #343c6a;
+  font-weight: 900;
+}
+
+.bar-chart-frame {
+  background-color: white;
+  border-radius: 20px;
+  min-width: 185px;
+  position: relative;
+}
+
+.bar-chart-container {
+  margin: 20px 20px 30px 20px;
+  min-width: 145px;
+  max-width: calc(100%-140px);
+}
+
+.pie-chart-frame {
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  overflow: visible;
+  padding: 20px 20px 20px 20px;
+}
+
+.pie-chart-container {
+  min-width: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.quick-transfer-frame {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.quick-transfer-container {
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.balance-history-container {
+  min-height: 100px;
+  min-width: 145px;
+  max-width: calc(100%-40px);
+}
+
+.wrapper {
+  margin: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.my-cards {
+  max-width: 480px;
+  overflow: scroll;
+}
+
+.recent-transactions {
+  max-width: 400px;
+}
+
+.weekly-activity {
+  max-width: 500px;
+}
+
+.expense-statistics {
+  max-width: 420px;
+}
+
+.quick-transfer {
+  max-width: 400px;
+}
+
+.balance-history {
+  max-width: 500px;
+}
