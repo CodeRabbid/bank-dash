@@ -4,6 +4,7 @@ import CreditCard from "../components/CreditCard.jsx";
 import RecentTransactionsShort from "../components/RecentTransactionsShort.jsx";
 import WeeklyActicityDiagram from "../components/WeeklyActivityDiagramm";
 import ExpenseStatisticsChart from "../components/ExpenseStatisticsChart";
+import QuickTransfers from "../components/QuickTransfers";
 
 export default function DashboardScreen() {
   return (
@@ -42,6 +43,18 @@ export default function DashboardScreen() {
           <div className="pie-chart-frame">
             <div className="pie-chart-container">
               <ExpenseStatisticsChart />
+            </div>
+          </div>
+        </div>
+        <div className="box quick-transfer">
+          <div>
+            <div className="top-banner">
+              <h2>Quick Transfer</h2>
+            </div>
+            <div className="quick-transfer-frame">
+              <div className="quick-transfer-container">
+                <QuickTransfers />
+              </div>
             </div>
           </div>
         </div>

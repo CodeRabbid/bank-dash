@@ -1,0 +1,110 @@
+.amount-frame {
+  background-color: #edf1f7;
+  width: 170px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 40px;
+  margin: 0px 0px 0px 0px;
+}
+
+.amount-input {
+  border: none;
+  outline: none;
+  background-color: #edf1f7;
+  color: #8ba3cb;
+  width: 40px;
+  font-size: 12px;
+  margin: 10px 10px 10px 20px;
+}
+
+.send-money-button {
+  background-color: #1814f3;
+  border: none;
+  height: 40px;
+  width: 90px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+
+.airplane {
+  width: 17px;
+  margin: 0px 0px 0px 10px;
+}
+
+.send-amount {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.write-amount {
+  color: #718ebf;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.payee-summary {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0px 1px 0px 1px;
+}
+
+.payee-name {
+  display: flex;
+  justify-content: center;
+  line-height: 10px;
+  font-size: 11px;
+  margin: 10px 0px 0px 0px;
+}
+
+.payee-role {
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+  font-size: 12px;
+  margin: 0px 0px 0px 0px;
+}
+
+.payee-profile-picture-container {
+  display: flex;
+  justify-content: center;
+}
+
+.three-profiles {
+  display: inline;
+}
+
+.all-payees {
+  overflow: visible;
+  position: absolute;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 2px 2px 5px #bbbbbb;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+.arrow-button:disabled,
+.arrow-button[disabled] {
+  background-color: #eeeeee;
+}
