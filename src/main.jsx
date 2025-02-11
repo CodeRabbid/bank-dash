@@ -20,16 +20,16 @@ import SettingsScreen from "./screens/SettingsScreen.jsx";
 
 const router = createHashRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route index={true} path="/" element={<DashboardScreen />} />
-      <Route path="/transactions" element={<TransactionsScreen />} />
-      <Route path="/accounts" element={<AccountsScreen />} />
-      <Route path="/investments" element={<InvestmentsScreen />} />
-      <Route path="/creditcards" element={<CreditCardsScreen />} />
-      <Route path="/loans" element={<LoansScreen />} />
-      <Route path="/services" element={<ServicesScreen />} />
-      <Route path="/privileges" element={<MyPrivilegesScreen />} />
-      <Route path="/settings" element={<SettingsScreen />} />
+    <Route path="" element={<App />}>
+      <Route index={true} path="" element={<DashboardScreen />} />
+      <Route path="transactions" element={<TransactionsScreen />} />
+      <Route path="accounts" element={<AccountsScreen />} />
+      <Route path="investments" element={<InvestmentsScreen />} />
+      <Route path="creditcards" element={<CreditCardsScreen />} />
+      <Route path="loans" element={<LoansScreen />} />
+      <Route path="services" element={<ServicesScreen />} />
+      <Route path="privileges" element={<MyPrivilegesScreen />} />
+      <Route path="settings" element={<SettingsScreen />} />
     </Route>
   )
 );
