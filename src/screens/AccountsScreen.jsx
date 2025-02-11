@@ -4,6 +4,7 @@ import BalanceIcon from "../assets/balance-icon.svg";
 import SavingIcon from "../assets/saving-icon.svg";
 import IncomeIcon from "../assets/income-icon.svg";
 import ExpenseIcon from "../assets/expense-icon.svg";
+import LastTransactions from "../components/LastTransactions";
 
 const USDollar = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -33,6 +34,12 @@ export default function AccountsScreen() {
               Icon={SavingIcon}
             />
           </div>
+        </div>
+        <div className="box last-transaction" style={{ maxWidth: 700 }}>
+          <div className="top-banner">
+            <h2>Last Transaction</h2>
+          </div>
+          <LastTransactions />
         </div>
       </div>
     </>

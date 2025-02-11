@@ -1,0 +1,58 @@
+.last-transaction-frame {
+  background: white;
+  display: block;
+  width: calc(100%-20px);
+  max-width: 800px;
+  padding: 10px;
+  border-radius: 23px;
+}
+
+.last-transaction-content {
+  display: table;
+  width: 100%;
+  max-width: 800px;
+}
+
+.last-transaction .transaction {
+  display: table-row;
+  height: 65px;
+  font-size: 14px;
+}
+
+.last-transaction .cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 7px 0px 7px;
+}
+
+.last-transaction .title {
+  color: #333b69;
+  font-weight: 500;
+}
+
+.last-transaction .description {
+  width: 30%;
+}
+
+.last-transaction .date {
+  color: #718ebf;
+}
+
+.last-transaction .type {
+  color: #718ebf;
+  width: 15%;
+}
+
+.last-transaction .card {
+  color: #718ebf;
+  width: 15%;
+}
+
+.last-transaction .status {
+  color: #718ebf;
+  width: 15%;
+}
+
+.last-transaction .amount {
+  width: 15%;
+}
