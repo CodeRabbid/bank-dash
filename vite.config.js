@@ -13,5 +13,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ["@emotion/styled"],
   },
-  base: "",
+  base: "/bank-dash",
 });
