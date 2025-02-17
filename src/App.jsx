@@ -81,7 +81,7 @@ function App() {
             ) : (
               <></>
             )}
-            <div>
+            <div className="main-content">
               <Outlet />
             </div>
           </div>
