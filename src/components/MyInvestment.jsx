@@ -24,7 +24,7 @@ export default function MyInvestment({
               src={Icon}
               width={45}
               height={45}
-              style={{ padding: "3px 10px 0px 0px", margin: 0 }}
+              style={{ padding: "3px 7px 0px 0px", margin: 0 }}
             />
           </td>
           <td className="title">{title}</td>
