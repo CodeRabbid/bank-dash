@@ -11,5 +11,5 @@ body {
 body,
 html {
   height: 100vh;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
