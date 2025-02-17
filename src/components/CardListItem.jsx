@@ -21,10 +21,10 @@ export default function CardListItem({
                 style={{ padding: "3px 7px 0px 0px", margin: 0 }}
               />
             </td>
-            <td className="title">Card Type</td>
-            <td className="title">Bank</td>
-            <td className="title">Card Number</td>
-            <td className="title">Name on Card</td>
+            <td className="title show-on-mobile">Card Type</td>
+            <td className="title show-on-mobile">Bank</td>
+            <td className="title hide-on-mobile">Card Number</td>
+            <td className="title hide-on-mobile">Name on Card</td>
             <td className="view-details" rowSpan={2}>
               View Details
             </td>
@@ -32,8 +32,8 @@ export default function CardListItem({
           <tr>
             <td className="value">{card_type}</td>
             <td className="value">{bank}</td>
-            <td className="value">{card_number}</td>
-            <td className="value">{name_on_card}</td>
+            <td className="value hide-on-mobile">{card_number}</td>
+            <td className="value hide-on-mobile">{name_on_card}</td>
           </tr>
         </table>
       </div>
