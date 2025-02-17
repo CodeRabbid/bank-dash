@@ -34,12 +34,12 @@ const options = {
     datalabels: {
       display: false,
     },
+  },
+  scales: {
     r: {
+      grid: { display: false },
       ticks: {
-        display: false, // Remove vertical numbers
-      },
-      grid: {
-        display: false, // Removes the circulair lines
+        display: false,
       },
     },
   },
