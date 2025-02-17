@@ -7,3 +7,8 @@
 body {
   background-color: #f5f7fa;
 }
+
+body,
+html {
+  height: 100%;
+}

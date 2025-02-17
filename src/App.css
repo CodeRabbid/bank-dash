@@ -54,6 +54,7 @@ h3 {
   border-bottom: 1px solid #e6eff5;
   background-color: white;
   z-index: 100000;
+  -webkit-backface-visibility: hidden;
 }
 
 .center-content {
