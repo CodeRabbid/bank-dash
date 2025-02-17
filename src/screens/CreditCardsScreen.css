@@ -1,9 +1,17 @@
 .three-cards-section {
   max-width: 720px;
   overflow: scroll;
+  margin: 25px;
 }
 
 .card-expese-statistics-section {
   max-width: 250px;
   height: 300px;
+}
+
+.card-list {
+  max-width: 690px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

@@ -1,0 +1,27 @@
+.card-list .frame {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 10px 10px 14px;
+}
+
+.card-list .title {
+  color: #232323;
+  vertical-align: bottom;
+  font-size: 13px;
+  padding: 0px 5px 0px 5px;
+}
+
+.card-list .value {
+  color: #718ebf;
+  vertical-align: top;
+  font-size: 12px;
+  padding: 0px 5px 0px 5px;
+  width: 20%;
+  white-space: nowrap;
+}
+
+.card-list .view-details {
+  white-space: nowrap;
+  color: #1814f3;
+  font-size: 13px;
+}
