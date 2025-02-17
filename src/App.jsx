@@ -88,7 +88,7 @@ function App() {
             ) : (
               <></>
             )}
-            <div style={{ marginTop: 106 }}>
+            <div>
               <Outlet />
             </div>
           </div>

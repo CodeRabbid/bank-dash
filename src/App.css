@@ -24,7 +24,7 @@ h3 {
 
 #right-side {
   margin-left: 231px;
-  margin-top: 86px;
+  /* margin-top: 86px; */
 }
 
 .side-menu-container {
@@ -45,7 +45,7 @@ h3 {
 }
 
 #header-container {
-  position: fixed;
+  position: sticky;
   top: 0px;
   height: 85px;
   display: flex;
