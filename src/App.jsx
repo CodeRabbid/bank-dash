@@ -25,14 +25,7 @@ function App() {
           </div>
           <SideMenu toggleDisplaySidMenu={() => setDisplaySideMenu(false)} />
         </div>
-        <div
-          id="right-side"
-          style={
-            {
-              // opacity: 0.5,
-            }
-          }
-        >
+        <div id="right-side">
           <div id="header-container">
             <div
               className="center-content"
