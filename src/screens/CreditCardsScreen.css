@@ -1,4 +1,9 @@
-.three-cards {
+.three-cards-section {
   max-width: 720px;
   overflow: scroll;
+}
+
+.card-expese-statistics-section {
+  max-width: 250px;
+  height: 300px;
 }
