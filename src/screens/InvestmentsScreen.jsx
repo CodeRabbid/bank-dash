@@ -2,6 +2,7 @@ import "./InvestmentScreen.css";
 import MoneyBagIcon from "../assets/money-bag-icon.svg";
 import StatsIcon from "../assets/stats-icon.svg";
 import ArrowsIcon from "../assets/arrows-icon.svg";
+import YearlyTotalInvestment from "../components/YearlyTotalInvestment";
 
 import React from "react";
 const USDollar = new Intl.NumberFormat("en-US", {
@@ -30,6 +31,18 @@ export default function InvestmentsScreen() {
             amount={"+5.80%"}
             Icon={ArrowsIcon}
           />
+        </div>
+        <div className="box balance-history">
+          <div>
+            <div className="top-banner">
+              <h2>Balance History</h2>
+            </div>
+            <div className="quick-transfer-frame">
+              <div className="balance-history-container">
+                <YearlyTotalInvestment />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
