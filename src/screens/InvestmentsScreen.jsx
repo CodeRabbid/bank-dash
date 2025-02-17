@@ -8,6 +8,7 @@ import MyInvestment from "../components/MyInvestment";
 import AppleRoundedSquare from "../assets/apple-rounded-square.svg";
 import GoogleRoundedSquare from "../assets/google-rounded-square.svg";
 import TeslaRoundedSquare from "../assets/tesla-rounded-square.svg";
+import TrendingStock from "../components/TrendingStock";
 
 import React from "react";
 const USDollar = new Intl.NumberFormat("en-US", {
@@ -79,6 +80,14 @@ export default function InvestmentsScreen() {
               amount={8200}
               return_value={25}
             />
+          </div>
+        </div>
+        <div className="box trending-stock-section">
+          <div className="top-banner">
+            <h2>Trending Stock</h2>
+          </div>
+          <div className="trending-stock">
+            <TrendingStock />
           </div>
         </div>
       </div>
