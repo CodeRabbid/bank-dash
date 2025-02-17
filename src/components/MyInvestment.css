@@ -1,0 +1,62 @@
+.my-investment-section .frame {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 10px 10px 14px;
+}
+
+.my-investment table {
+  border-collapse: collapse;
+}
+
+.my-investment td {
+  /* border: 1px solid black; */
+  white-space: nowrap;
+}
+
+.my-investment .title {
+  color: #232323;
+}
+
+.my-investment .amount {
+  color: #232323;
+}
+
+.my-investment .return-value,
+.my-investment .title,
+.my-investment .amount {
+  font-size: 13px;
+  padding: 0px 6px 0px 6px;
+  vertical-align: bottom;
+}
+
+.my-investment .type,
+.my-investment .investment-value-text,
+.my-investment .return-value-text {
+  color: #718ebf;
+  font-size: 11px;
+  padding: 0px 6px 0px 6px;
+  vertical-align: top;
+}
+
+.my-investment .title,
+.my-investment .type {
+  width: calc(100%);
+}
+
+.my-investment .amount,
+.my-investment .investment-value-text {
+  width: 100px;
+}
+
+.my-investment .return-value,
+.my-investment .return-value-text {
+  width: 100px;
+}
+
+@media only screen and (max-width: 630px) {
+  .my-investment .amount,
+  .my-investment .investment-value-text,
+  .my-investment .return-value-text {
+    display: none;
+  }
+}

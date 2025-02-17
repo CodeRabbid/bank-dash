@@ -29,3 +29,10 @@
   border-radius: 20px;
   position: relative;
 }
+
+.my-investment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
