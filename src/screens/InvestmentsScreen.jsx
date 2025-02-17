@@ -3,6 +3,7 @@ import MoneyBagIcon from "../assets/money-bag-icon.svg";
 import StatsIcon from "../assets/stats-icon.svg";
 import ArrowsIcon from "../assets/arrows-icon.svg";
 import YearlyTotalInvestment from "../components/YearlyTotalInvestment";
+import MonthlyRevenue from "../components/MonthlyRevenue";
 
 import React from "react";
 const USDollar = new Intl.NumberFormat("en-US", {
@@ -33,15 +34,19 @@ export default function InvestmentsScreen() {
           />
         </div>
         <div className="box balance-history">
-          <div>
-            <div className="top-banner">
-              <h2>Balance History</h2>
-            </div>
-            <div className="quick-transfer-frame">
-              <div className="balance-history-container">
-                <YearlyTotalInvestment />
-              </div>
-            </div>
+          <div className="top-banner">
+            <h2>Balance History</h2>
+          </div>
+          <div className="diagram-frame">
+            <YearlyTotalInvestment />
+          </div>
+        </div>
+        <div className="box balance-history">
+          <div className="top-banner">
+            <h2>Monthly Revenue</h2>
+          </div>
+          <div className="diagram-frame">
+            <MonthlyRevenue />
           </div>
         </div>
       </div>
