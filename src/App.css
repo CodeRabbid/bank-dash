@@ -48,7 +48,7 @@ h3 {
   top: 0px;
   height: 85px;
   display: flex;
-  width: 100%;
+  width: calc(100% - 230px);
   align-items: center;
   border-bottom: 1px solid #e6eff5;
   background-color: white;
