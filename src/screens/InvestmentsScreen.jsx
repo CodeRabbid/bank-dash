@@ -9,6 +9,7 @@ import AppleRoundedSquare from "../assets/apple-rounded-square.svg";
 import GoogleRoundedSquare from "../assets/google-rounded-square.svg";
 import TeslaRoundedSquare from "../assets/tesla-rounded-square.svg";
 import TrendingStock from "../components/TrendingStock";
+import MiddleSection from "../components/MiddleSection";
 
 import React from "react";
 const USDollar = new Intl.NumberFormat("en-US", {
@@ -94,17 +95,3 @@ export default function InvestmentsScreen() {
     </div>
   );
 }
-
-const MiddleSection = ({ title, amount, Icon }) => {
-  return (
-    <div className="small-section-frame">
-      <div>
-        <img src={Icon} width={60} />
-      </div>
-      <div style={{ padding: 10 }}>
-        <div className="small-section-title">{title}</div>
-        <div className="small-section-amount">{amount}</div>
-      </div>
-    </div>
-  );
-};

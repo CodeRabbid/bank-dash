@@ -1,0 +1,53 @@
+.bank-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bank-services-list .frame {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.bank-services-list table {
+  width: 100%;
+}
+
+.bank-services-list table td {
+  white-space: nowrap;
+}
+
+.bank-services-list button {
+  background-color: white;
+  border: 1px solid #718ebf;
+  border-radius: 15px;
+  color: #718ebf;
+  height: 30px;
+  width: 120px;
+}
+
+.bank-services-list button:hover {
+  border: 1px solid #1814f3;
+  color: #1814f3;
+}
+
+.bank-services-list .title {
+  color: #232323;
+  vertical-align: bottom;
+  font-size: 13px;
+  padding: 0px 10px 0px 10px;
+}
+
+.bank-services-list .description {
+  color: #718ebf;
+  vertical-align: top;
+  font-size: 12px;
+  padding: 0px 10px 0px 10px;
+}
+
+@media only screen and (max-width: 630px) {
+  .bank-services-list .hide-on-small-screen {
+    display: none;
+  }
+}
