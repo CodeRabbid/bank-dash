@@ -1,0 +1,31 @@
+.card-settings .frame {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+}
+
+.card-settings img {
+  padding: 8px 13px 5px 3px;
+}
+
+.card-settings table {
+  border-collapse: collapse;
+}
+
+.card-settings td {
+  /* border: 1px solid black; */
+}
+
+.card-settings .title {
+  color: #232323;
+  font-size: 14px;
+  vertical-align: bottom;
+  line-height: 24px;
+}
+
+.card-settings .description {
+  color: #718ebf;
+  font-size: 13px;
+  vertical-align: top;
+  line-height: 24px;
+}
