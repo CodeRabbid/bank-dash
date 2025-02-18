@@ -18,10 +18,10 @@
 
 .add-new-card-section {
   max-width: 500px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1 1 250px;
 }
 
 .card-settings-section {
   max-width: 380px;
+  flex: 1 1 300px;
 }
