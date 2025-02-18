@@ -24,7 +24,7 @@
 .card-list .view-details {
   white-space: nowrap;
   color: #1814f3;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 630px) {
