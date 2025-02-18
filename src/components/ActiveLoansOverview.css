@@ -1,0 +1,68 @@
+.active-loans-overview .frame {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.active-loans-overview table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.active-loans-overview th,
+.active-loans-overview tr {
+  border-bottom: 1px solid #e6eff5;
+  white-space: nowrap;
+}
+
+.active-loans-overview th {
+  padding: 0px 10px 0px 0px;
+  font-weight: 400;
+  color: #718ebf;
+  text-align: left;
+  font-size: 13px;
+}
+
+.active-loans-overview th {
+  height: 40px;
+}
+
+.active-loans-overview td {
+  height: 50px;
+  font-size: 13px;
+  color: #232323;
+}
+
+.active-loans-overview tr.total {
+  border: none;
+}
+
+.active-loans-overview tr.total td {
+  color: #fe5c73;
+}
+
+.active-loans-overview button {
+  background-color: white;
+  height: 30px;
+  width: 80px;
+  border-radius: 35px;
+  color: #232323;
+  border: 1px solid #232323;
+}
+
+.active-loans-overview button:hover {
+  color: #1814f3;
+  border: 1px solid #1814f3;
+}
+
+@media only screen and (max-width: 630px) {
+  .active-loans-overview .hide-on-small-screen {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .active-loans-overview .hide-on-large-screen {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+.small-section-title {
+  color: #718ebf;
+  padding: 3px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.small-section-amount {
+  color: #232323;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Inter";
+  white-space: nowrap;
+}

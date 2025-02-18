@@ -12,10 +12,6 @@
   border-collapse: collapse;
 }
 
-.card-settings td {
-  /* border: 1px solid black; */
-}
-
 .card-settings .title {
   color: #232323;
   font-size: 14px;

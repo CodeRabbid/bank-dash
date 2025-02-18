@@ -1,3 +1,5 @@
+import "./SmallSection.css";
+
 const USDollar = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",

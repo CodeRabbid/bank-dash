@@ -1,5 +1,4 @@
 import "./Transaction.css";
-import RecentTransactions from "../components/RecentTransactions.jsx";
 
 const Transaction = ({ memo, date, amount, positive, Logo, logoColor }) => {
   return (
