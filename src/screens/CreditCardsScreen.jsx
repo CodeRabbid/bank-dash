@@ -6,6 +6,7 @@ import CardExpenseStatistics from "../components/CardExpenseStatistics";
 import BlueCardRoundedSquare from "../assets/blue-card-rounded-square.svg";
 import RedCardRoundedSquare from "../assets/red-card-rounded-square.svg";
 import YellowCardRoundedSquare from "../assets/yellow-card-rounded-square.svg";
+import AddNewCard from "../components/AddNewCard";
 
 export default function CreditCardsScreen() {
   return (
@@ -55,6 +56,14 @@ export default function CreditCardsScreen() {
               card_number={"**** **** 7560"}
               name_on_card={"Edward"}
             />
+          </div>
+        </div>
+        <div className="box add-new-card-section">
+          <div className="top-banner">
+            <h2>Add New Card</h2>
+          </div>
+          <div className="add-new-card">
+            <AddNewCard />
           </div>
         </div>
       </div>

@@ -1,0 +1,58 @@
+.add-new-card .frame {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.add-new-card .disclaimer {
+  color: #718ebf;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.add-new-card .inputs-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0px 0px 0px;
+  gap: 10px;
+}
+
+.add-new-card input {
+  outline: none;
+  border: none;
+}
+
+.add-new-card .input-container {
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.add-new-card .label-container {
+  margin: 5px;
+}
+
+.add-new-card label {
+  color: #232323;
+  font-size: 14px;
+}
+
+.add-new-card .input-frame {
+  display: flex;
+  flex-basis: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #dfeaf2;
+  flex-grow: 1;
+}
+
+.add-new-card button.add-card {
+  background-color: #1814f3;
+  color: white;
+  height: 45px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0px 0px 0px;
+}
