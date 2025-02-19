@@ -38,30 +38,32 @@ export default function BankServicesList() {
       {services.map((service) => (
         <div className="frame">
           <table>
-            <tr>
-              <td rowSpan={2}>
-                <img src={service.icon} width={45} />
-              </td>
-              <td className="title">{service.title}</td>
-              <td className="title hide-on-small-screen">Lorem Ipsum</td>
-              <td className="title hide-on-small-screen">Lorem Ipsum</td>
-              <td className="title hide-on-small-screen">Lorem Ipsum</td>
-              <td rowSpan={2}>
-                <button>View Details</button>
-              </td>
-            </tr>
-            <tr>
-              <td className="description">It is a long establishment</td>
-              <td className="description hide-on-small-screen">
-                Many publishing
-              </td>
-              <td className="description hide-on-small-screen">
-                Many publishing
-              </td>
-              <td className="description hide-on-small-screen">
-                Many publishing
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td rowSpan={2}>
+                  <img src={service.icon} width={45} />
+                </td>
+                <td className="title">{service.title}</td>
+                <td className="title hide-on-small-screen">Lorem Ipsum</td>
+                <td className="title hide-on-small-screen">Lorem Ipsum</td>
+                <td className="title hide-on-small-screen">Lorem Ipsum</td>
+                <td rowSpan={2}>
+                  <button>View Details</button>
+                </td>
+              </tr>
+              <tr>
+                <td className="description">It is a long establishment</td>
+                <td className="description hide-on-small-screen">
+                  Many publishing
+                </td>
+                <td className="description hide-on-small-screen">
+                  Many publishing
+                </td>
+                <td className="description hide-on-small-screen">
+                  Many publishing
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       ))}
