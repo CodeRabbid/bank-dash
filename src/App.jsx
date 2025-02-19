@@ -8,12 +8,25 @@ import OptionsButton from "./assets/options-button.svg?react";
 import MagnifyingGlass from "./assets/magnifying-glass.svg";
 import ProfilePicture from "./assets/profile-picture.svg";
 
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import { useState } from "react";
 
 function App() {
   const [displaySideMenu, setDisplaySideMenu] = useState(false);
+  const location = useLocation();
+  const pageTitle = () => {
+    if (location.pathname === "/") return "Overview";
+    else if (location.pathname.startsWith("/transactions"))
+      return "Transactions";
+    else if (location.pathname.startsWith("/accounts")) return "Accounts";
+    else if (location.pathname.startsWith("/investments")) return "Investments";
+    else if (location.pathname.startsWith("/creditcards"))
+      return "Credit Cards";
+    else if (location.pathname.startsWith("/loans")) return "Loans";
+    else if (location.pathname.startsWith("/services")) return "Services";
+    else if (location.pathname.startsWith("/settings")) return "Settings";
+  };
 
   return (
     <>
@@ -44,7 +57,7 @@ function App() {
               >
                 <OptionsButton />
               </button>
-              <h1 className="overview">Overview</h1>
+              <h1 className="overview">{pageTitle()}</h1>
               <div className=" top-right-options ">
                 <div className="center-content">
                   <form>
