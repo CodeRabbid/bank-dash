@@ -15,7 +15,6 @@ import InvestmentsScreen from "./screens/InvestmentsScreen.jsx";
 import CreditCardsScreen from "./screens/CreditCardsScreen.jsx";
 import LoansScreen from "./screens/LoansScreen.jsx";
 import ServicesScreen from "./screens/ServicesScreen.jsx";
-import MyPrivilegesScreen from "./screens/MyPrivilegesScreen.jsx";
 import SettingsScreen from "./screens/SettingsScreen.jsx";
 
 const router = createHashRouter(
@@ -28,7 +27,6 @@ const router = createHashRouter(
       <Route path="creditcards" element={<CreditCardsScreen />} />
       <Route path="loans" element={<LoansScreen />} />
       <Route path="services" element={<ServicesScreen />} />
-      <Route path="privileges" element={<MyPrivilegesScreen />} />
       <Route path="settings" element={<SettingsScreen />} />
     </Route>
   )

@@ -58,12 +58,6 @@ export default function SideMenu({ toggleDisplaySidMenu }) {
           toggleDisplaySidMenu={toggleDisplaySidMenu}
         />
         <SideMenuButton
-          path="/privileges"
-          Icon={EconomicsIcon}
-          text="My Privileges"
-          toggleDisplaySidMenu={toggleDisplaySidMenu}
-        />
-        <SideMenuButton
           path="/settings"
           Icon={SettingsSolidIcon}
           text="Settings"
