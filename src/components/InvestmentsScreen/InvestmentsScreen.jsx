@@ -39,27 +39,23 @@ export default function InvestmentsScreen() {
             Icon={ArrowsIcon}
           />
         </div>
-        <div className="box balance-history">
+        <div className="box yearly-total-investment">
           <div className="top-banner">
             <h2>Yearly Total Investment</h2>
           </div>
-          <div className="diagram-frame">
-            <YearlyTotalInvestment />
-          </div>
+          <YearlyTotalInvestment />
         </div>
-        <div className="box balance-history">
+        <div className="box monthly-revenue">
           <div className="top-banner">
             <h2>Monthly Revenue</h2>
           </div>
-          <div className="diagram-frame">
-            <MonthlyRevenue />
-          </div>
+          <MonthlyRevenue />
         </div>
         <div className="box my-investment-section">
           <div className="top-banner">
-            <h2>My Investment</h2>
+            <h2>My Investments</h2>
           </div>
-          <div className="my-investment">
+          <div className="my-investments">
             <MyInvestment
               Icon={AppleRoundedSquare}
               title={"Apple Store"}
@@ -87,9 +83,7 @@ export default function InvestmentsScreen() {
           <div className="top-banner">
             <h2>Trending Stock</h2>
           </div>
-          <div className="trending-stock">
-            <TrendingStock />
-          </div>
+          <TrendingStock />
         </div>
       </div>
     </div>

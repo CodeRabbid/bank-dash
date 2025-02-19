@@ -1,0 +1,9 @@
+.diagram-frame {
+  min-width: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}

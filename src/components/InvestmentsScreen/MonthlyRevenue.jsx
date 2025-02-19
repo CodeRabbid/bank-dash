@@ -89,7 +89,7 @@ const options = {
 
 const MonthlyRevenue = () => {
   return (
-    <div>
+    <div className="diagram-frame">
       <Line data={data} options={options} />
     </div>
   );

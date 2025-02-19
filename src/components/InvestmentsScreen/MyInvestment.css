@@ -1,12 +1,12 @@
-.my-investment-section .frame {
+.my-investment .frame {
   background-color: white;
   border-radius: 20px;
+  padding: 10px 15px 10px 15px;
   width: 100%;
 }
 
 .my-investment table {
   border-collapse: collapse;
-  margin: 10px 10px 10px 14px;
 }
 
 .my-investment td {

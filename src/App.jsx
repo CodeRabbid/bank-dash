@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Common.css";
 import SideMenu from "./components/SideMenu";
 import Icon from "./assets/bank-dash-icon.svg";
 import IconText from "./assets/bank-dash-text.svg";

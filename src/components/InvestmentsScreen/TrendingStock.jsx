@@ -13,45 +13,47 @@ const zeroPad = (num, places) => String(num).padStart(places, "0");
 
 export default function TrendingStock() {
   return (
-    <div className="frame">
-      <table>
-        <thead>
-          <tr>
-            <th className="sl" width="1">
-              SL No
-            </th>
-            <th className="name" width="*">
-              Name
-            </th>
-            <th className="price" width="1">
-              Price
-            </th>
-            <th className="return" width="1">
-              Return
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((stock) => (
+    <div className="trending-stock">
+      <div className="frame">
+        <table>
+          <thead>
             <tr>
-              <td className="values">
-                {zeroPad(stock.SLNo, 2)}
-                {"."}
-              </td>
-              <td className="values">{stock.Name}</td>
-              <td className="values">{stock.Price}</td>
-              <td
-                className="values"
-                style={{ color: stock.Return >= 0 ? "#16DBAA" : "#FE5C73" }}
-              >
-                {stock.Return >= 0 ? "+" : ""}
-                {stock.Return}
-                {"%"}
-              </td>
+              <th className="sl" width="1">
+                SL No
+              </th>
+              <th className="name" width="*">
+                Name
+              </th>
+              <th className="price" width="1">
+                Price
+              </th>
+              <th className="return" width="1">
+                Return
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.map((stock) => (
+              <tr>
+                <td className="values">
+                  {zeroPad(stock.SLNo, 2)}
+                  {"."}
+                </td>
+                <td className="values">{stock.Name}</td>
+                <td className="values">{stock.Price}</td>
+                <td
+                  className="values"
+                  style={{ color: stock.Return >= 0 ? "#16DBAA" : "#FE5C73" }}
+                >
+                  {stock.Return >= 0 ? "+" : ""}
+                  {stock.Return}
+                  {"%"}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
