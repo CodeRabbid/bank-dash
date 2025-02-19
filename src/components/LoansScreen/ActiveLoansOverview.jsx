@@ -77,65 +77,67 @@ const USDollar = new Intl.NumberFormat("en-US", {
 
 export default function ActiveLoansOverview() {
   return (
-    <div className="frame">
-      <table>
-        <thead>
-          <tr>
-            <th className="hide-on-small-screen">SL No</th>
-            <th>Loan Amount</th>
-            <th>Left to repay</th>
-            <th className="hide-on-small-screen">Duration</th>
-            <th className="hide-on-small-screen">Interest rate</th>
-            <th className="hide-on-small-screen">Installment</th>
-            <th>Repay</th>
-          </tr>
-        </thead>
-        <tbody>
-          {loans.map((loan) => (
+    <div className="active-loans-overview">
+      <div className="frame">
+        <table>
+          <thead>
             <tr>
-              <td className="hide-on-small-screen">
-                {zeroPad(loan.sLNo, 2)}
-                {"."}
-              </td>
-              <td>{USDollar.format(loan.loanAmount)}</td>
-              <td>{USDollar.format(loan.leftToRepay)}</td>
-              <td className="hide-on-small-screen">
-                {loan.duration}
-                {" months"}
-              </td>
-              <td className="hide-on-small-screen">
-                {loan.interestRate}
-                {" %"}
-              </td>
-              <td className="hide-on-small-screen">
-                {USDollar.format(loan.installement)}
-                {" / month"}
+              <th className="hide-on-small-screen">SL No</th>
+              <th>Loan Amount</th>
+              <th>Left to repay</th>
+              <th className="hide-on-small-screen">Duration</th>
+              <th className="hide-on-small-screen">Interest rate</th>
+              <th className="hide-on-small-screen">Installment</th>
+              <th>Repay</th>
+            </tr>
+          </thead>
+          <tbody>
+            {loans.map((loan) => (
+              <tr>
+                <td className="hide-on-small-screen">
+                  {zeroPad(loan.sLNo, 2)}
+                  {"."}
+                </td>
+                <td>{USDollar.format(loan.loanAmount)}</td>
+                <td>{USDollar.format(loan.leftToRepay)}</td>
+                <td className="hide-on-small-screen">
+                  {loan.duration}
+                  {" months"}
+                </td>
+                <td className="hide-on-small-screen">
+                  {loan.interestRate}
+                  {" %"}
+                </td>
+                <td className="hide-on-small-screen">
+                  {USDollar.format(loan.installement)}
+                  {" / month"}
+                </td>
+                <td>
+                  <button>Repay</button>
+                </td>
+              </tr>
+            ))}
+            <tr className="total">
+              <td className="hide-on-small-screen">Total</td>
+              <td>
+                <p className="hide-on-large-screen">Total</p>
+                {USDollar.format(125000)}
               </td>
               <td>
-                <button>Repay</button>
+                <br className="hide-on-large-screen" />
+                {USDollar.format(750000)}
               </td>
+              <td className="hide-on-small-screen"></td>
+              <td className="hide-on-small-screen"> </td>
+              <td className="hide-on-small-screen">
+                {USDollar.format(50000)}
+                {" / month"}
+              </td>
+              <td></td>
             </tr>
-          ))}
-          <tr className="total">
-            <td className="hide-on-small-screen">Total</td>
-            <td>
-              <p className="hide-on-large-screen">Total</p>
-              {USDollar.format(125000)}
-            </td>
-            <td>
-              <br className="hide-on-large-screen" />
-              {USDollar.format(750000)}
-            </td>
-            <td className="hide-on-small-screen"></td>
-            <td className="hide-on-small-screen"> </td>
-            <td className="hide-on-small-screen">
-              {USDollar.format(50000)}
-              {" / month"}
-            </td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

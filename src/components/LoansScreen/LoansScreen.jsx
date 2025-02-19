@@ -39,9 +39,8 @@ export default function LoansScreen() {
         <div className="top-banner">
           <h2>Active Loans Overview</h2>
         </div>
-        <div className="active-loans-overview">
-          <ActiveLoansOverview />
-        </div>
+
+        <ActiveLoansOverview />
       </div>
     </div>
   );
