@@ -11,7 +11,7 @@ import CardSettings from "./CardSettings";
 
 export default function CreditCardsScreen() {
   return (
-    <>
+    <div className="credit-card-screen">
       <div className="box three-cards-section">
         <div className="top-banner">
           <h2>My Cards</h2>
@@ -63,19 +63,15 @@ export default function CreditCardsScreen() {
           <div className="top-banner">
             <h2>Add New Card</h2>
           </div>
-          <div className="add-new-card">
-            <AddNewCard />
-          </div>
+          <AddNewCard />
         </div>
         <div className="box card-settings-section">
           <div className="top-banner">
             <h2>Card Settings</h2>
           </div>
-          <div className="card-settings">
-            <CardSettings />
-          </div>
+          <CardSettings />
         </div>
       </div>
-    </>
+    </div>
   );
 }

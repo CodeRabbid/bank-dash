@@ -35,24 +35,26 @@ const settings = [
 
 export default function CardSettings() {
   return (
-    <div className="frame">
-      <table>
-        <tbody>
-          {settings.map((setting) => (
-            <>
-              <tr>
-                <td rowSpan="2">
-                  <img src={setting.icon} alt="" />
-                </td>
-                <td className="title">{setting.title}</td>
-              </tr>
-              <tr>
-                <td className="description">{setting.description}</td>
-              </tr>
-            </>
-          ))}
-        </tbody>
-      </table>
+    <div className="card-settings">
+      <div className="frame">
+        <table>
+          <tbody>
+            {settings.map((setting) => (
+              <>
+                <tr>
+                  <td rowSpan="2">
+                    <img src={setting.icon} alt="" />
+                  </td>
+                  <td className="title">{setting.title}</td>
+                </tr>
+                <tr>
+                  <td className="description">{setting.description}</td>
+                </tr>
+              </>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
