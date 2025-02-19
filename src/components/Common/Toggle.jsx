@@ -2,9 +2,9 @@ import "./Toggle.css";
 
 export default function Toggle({ id }) {
   return (
-    <div class="toggle checkbox-container">
+    <div className="toggle checkbox-container">
       <input type="checkbox" id={id} className="toggle-input" />
-      <label for={id} class="toggle"></label>
+      <label htmlFor={id} className="toggle"></label>
     </div>
   );
 }

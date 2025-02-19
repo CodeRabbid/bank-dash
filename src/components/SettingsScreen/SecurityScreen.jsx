@@ -5,10 +5,10 @@ export default function SecurityScreen() {
   return (
     <div className="security container">
       <div className="title">Two-factor Authentication</div>
-      <div class="checkboxes-container">
+      <div className="checkboxes-container">
         <div className="toggle-container">
           <Toggle id="two-factor" />
-          <label for="two-factor" class="label">
+          <label htmlFor="two-factor" className="label">
             Enable two factor authentication
           </label>
         </div>

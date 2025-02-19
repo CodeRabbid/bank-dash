@@ -25,22 +25,22 @@ export default function PreferencesScreen() {
       </div>
       <div className="notification-preferences-container">
         <label htmlFor="">Notification</label>
-        <div class="checkboxes-container">
+        <div className="checkboxes-container">
           <div className="toggle-container">
             <Toggle id="digital-currency" />
-            <label for="digital-currency" class="label">
+            <label htmlFor="digital-currency" className="label">
               I send or receive digital currency
             </label>
           </div>
           <div className="toggle-container">
             <Toggle id="merchant-order" />
-            <label for="merchant-order" class="label">
+            <label htmlFor="merchant-order" className="label">
               I receive merchant order
             </label>
           </div>
           <div className="toggle-container">
             <Toggle id="recommendation" />
-            <label for="recommendation" class="label">
+            <label htmlFor="recommendation" className="label">
               There are recommendation for my account
             </label>
           </div>
