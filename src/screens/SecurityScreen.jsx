@@ -7,8 +7,8 @@ export default function SecurityScreen() {
       <div className="title">Two-factor Authentication</div>
       <div class="checkboxes-container">
         <div className="toggle-container">
-          <Toggle id="digital-currency" />
-          <label for="digital-currency" class="label">
+          <Toggle id="two-factor" />
+          <label for="two-factor" class="label">
             Enable two factor authentication
           </label>
         </div>
