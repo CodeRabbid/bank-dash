@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RecentTransactionsTabs from "./RecentTransactionsTabs.jsx";
-import RecentTransactionsTable from "../components/RecentTransactionsTable.jsx";
+import RecentTransactionsTable from "./RecentTransactionsTable.jsx";
 
 export default function RecentTransactions() {
   const [tab, setTab] = useState("all");

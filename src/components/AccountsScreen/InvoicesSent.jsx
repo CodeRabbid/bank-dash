@@ -1,7 +1,7 @@
-import AppleIcon from "../assets/apple-icon.svg";
-import YellowPersonIcon from "../assets/yellow-person-icon.svg";
-import PlaystationIcon from "../assets/playstation-icon.svg";
-import RedPersonIcon from "../assets/red-person-icon.svg";
+import AppleIcon from "../../assets/apple-icon.svg";
+import YellowPersonIcon from "../../assets/yellow-person-icon.svg";
+import PlaystationIcon from "../../assets/playstation-icon.svg";
+import RedPersonIcon from "../../assets/red-person-icon.svg";
 import InvoiceShort from "./InvoiceShort";
 
 const InvoicesSent = () => {

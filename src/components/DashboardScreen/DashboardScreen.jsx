@@ -1,11 +1,11 @@
 import "./DashboardScreen.css";
 import React from "react";
-import CreditCard from "../components/CreditCard.jsx";
-import RecentTransactionsShort from "../components/RecentTransactionsShort.jsx";
-import WeeklyActicityDiagram from "../components/WeeklyActivityDiagramm";
-import ExpenseStatisticsChart from "../components/ExpenseStatisticsChart";
-import QuickTransfers from "../components/QuickTransfers";
-import BalanceHistory from "../components/BalanceHistory";
+import CreditCard from "../Common/CreditCard.jsx";
+import RecentTransactionsShort from "./RecentTransactionsShort.jsx";
+import WeeklyActicityDiagram from "./WeeklyActivityDiagramm.jsx";
+import ExpenseStatistics from "./ExpenseStatistics.js";
+import QuickTransfers from "./QuickTransfers.jsx";
+import BalanceHistory from "./BalanceHistory.jsx";
 
 export default function DashboardScreen() {
   return (
@@ -43,7 +43,7 @@ export default function DashboardScreen() {
           </div>
           <div className="pie-chart-frame">
             <div className="pie-chart-container">
-              <ExpenseStatisticsChart />
+              <ExpenseStatistics />
             </div>
           </div>
         </div>

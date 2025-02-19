@@ -1,5 +1,5 @@
 import React from "react";
-import EditProfile from "../assets/edit-profile.svg";
+import EditProfile from "../../assets/edit-profile.svg";
 import "./EditProfileScreen.css";
 
 export default function EditProfileScreen() {

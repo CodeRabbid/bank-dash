@@ -1,14 +1,14 @@
 import "./AccountsScreen.css";
 import React from "react";
-import BalanceIcon from "../assets/balance-icon.svg";
-import SavingIcon from "../assets/saving-icon.svg";
-import IncomeIcon from "../assets/income-icon.svg";
-import ExpenseIcon from "../assets/expense-icon.svg";
-import LastTransactions from "../components/LastTransactions";
-import CreditCard from "../components/CreditCard";
-import DebitCreditOverview from "../components/DebitCreditOverview.jsx";
-import InvoicesSent from "../components/InvoicesSent.jsx";
-import SmallSection from "../components/SmallSection.jsx";
+import BalanceIcon from "../../assets/balance-icon.svg";
+import SavingIcon from "../../assets/saving-icon.svg";
+import IncomeIcon from "../../assets/income-icon.svg";
+import ExpenseIcon from "../../assets/expense-icon.svg";
+import LastTransactions from "./LastTransactions.jsx";
+import CreditCard from "../Common/CreditCard.jsx";
+import DebitCreditOverview from "./DebitCreditOverview.jsx";
+import InvoicesSent from "./InvoicesSent.jsx";
+import SmallSection from "../Common/SmallSection.jsx";
 
 export default function AccountsScreen() {
   return (

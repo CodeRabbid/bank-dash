@@ -1,7 +1,7 @@
-import CredicCardsIcon from "../assets/credit-cards-icon.svg?react";
-import PaypalIcon from "../assets/paypal-icon.svg?react";
-import DollarIcon from "../assets/dollar-icon.svg?react";
-import Transaction from "./Transaction";
+import CredicCardsIcon from "../../assets/credit-cards-icon.svg?react";
+import PaypalIcon from "../../assets/paypal-icon.svg?react";
+import DollarIcon from "../../assets/dollar-icon.svg?react";
+import Transaction from "../TransactionsScreen/Transaction";
 
 const RecentTransactionsShort = () => {
   return (

@@ -1,9 +1,9 @@
 import "./ServicesScreen.css";
-import ServiceSection from "../components/ServiceSection";
-import LifeInsuranceIcon from "../assets/life-insurance-icon.svg";
-import ShoppingIcon from "../assets/shopping-icon.svg";
-import SafetyIcon from "../assets/safety-icon.svg";
-import BankServicesList from "../components/BankServicesList";
+import ServiceSection from "./ServiceSection";
+import LifeInsuranceIcon from "../../assets/life-insurance-icon.svg";
+import ShoppingIcon from "../../assets/shopping-icon.svg";
+import SafetyIcon from "../../assets/safety-icon.svg";
+import BankServicesList from "./BankServicesList";
 
 export default function ServicesScreen() {
   return (
@@ -27,6 +27,9 @@ export default function ServicesScreen() {
           />
         </div>
         <div className="box bank-services-list-sections">
+          <div className="top-banner">
+            <h2>Bank Services List</h2>
+          </div>
           <div className="bank-services-list">
             <BankServicesList />
           </div>

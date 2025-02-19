@@ -1,13 +1,13 @@
 import "./CreditCardsScreen.css";
 import React from "react";
-import CreditCard from "../components/CreditCard";
-import CardListItem from "../components/CardListItem";
-import CardExpenseStatistics from "../components/CardExpenseStatistics";
-import BlueCardRoundedSquare from "../assets/blue-card-rounded-square.svg";
-import RedCardRoundedSquare from "../assets/red-card-rounded-square.svg";
-import YellowCardRoundedSquare from "../assets/yellow-card-rounded-square.svg";
-import AddNewCard from "../components/AddNewCard";
-import CardSettings from "../components/CardSettings";
+import CreditCard from "../Common/CreditCard";
+import CardListItem from "./CardListItem";
+import CardExpenseStatistics from "./CardExpenseStatistics";
+import BlueCardRoundedSquare from "../../assets/blue-card-rounded-square.svg";
+import RedCardRoundedSquare from "../../assets/red-card-rounded-square.svg";
+import YellowCardRoundedSquare from "../../assets/yellow-card-rounded-square.svg";
+import AddNewCard from "./AddNewCard";
+import CardSettings from "./CardSettings";
 
 export default function CreditCardsScreen() {
   return (

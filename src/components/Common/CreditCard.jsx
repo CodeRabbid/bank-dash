@@ -1,7 +1,7 @@
-import CardChip from "../assets/card-chip.svg?react";
-import CardChipDark from "../assets/card-chip-dark.svg?react";
-import MasterCardLogo from "../assets/mastercard-logo.svg?react";
-import MasterCardLogoDark from "../assets/mastercard-logo-dark.svg?react";
+import CardChip from "../../assets/card-chip.svg?react";
+import CardChipDark from "../../assets/card-chip-dark.svg?react";
+import MasterCardLogo from "../../assets/mastercard-logo.svg?react";
+import MasterCardLogoDark from "../../assets/mastercard-logo-dark.svg?react";
 
 import "./CreditCard.css";
 

@@ -1,15 +1,15 @@
 import "./InvestmentScreen.css";
-import MoneyBagIcon from "../assets/money-bag-icon.svg";
-import StatsIcon from "../assets/stats-icon.svg";
-import ArrowsIcon from "../assets/arrows-icon.svg";
-import YearlyTotalInvestment from "../components/YearlyTotalInvestment";
-import MonthlyRevenue from "../components/MonthlyRevenue";
-import MyInvestment from "../components/MyInvestment";
-import AppleRoundedSquare from "../assets/apple-rounded-square.svg";
-import GoogleRoundedSquare from "../assets/google-rounded-square.svg";
-import TeslaRoundedSquare from "../assets/tesla-rounded-square.svg";
-import TrendingStock from "../components/TrendingStock";
-import MiddleSection from "../components/MiddleSection";
+import MoneyBagIcon from "../../assets/money-bag-icon.svg";
+import StatsIcon from "../../assets/stats-icon.svg";
+import ArrowsIcon from "../../assets/arrows-icon.svg";
+import YearlyTotalInvestment from "./YearlyTotalInvestment";
+import MonthlyRevenue from "./MonthlyRevenue";
+import MyInvestment from "./MyInvestment";
+import AppleRoundedSquare from "../../assets/apple-rounded-square.svg";
+import GoogleRoundedSquare from "../../assets/google-rounded-square.svg";
+import TeslaRoundedSquare from "../../assets/tesla-rounded-square.svg";
+import TrendingStock from "./TrendingStock";
+import MiddleSection from "./MiddleSection";
 
 import React from "react";
 const USDollar = new Intl.NumberFormat("en-US", {
@@ -41,7 +41,7 @@ export default function InvestmentsScreen() {
         </div>
         <div className="box balance-history">
           <div className="top-banner">
-            <h2>Balance History</h2>
+            <h2>Yearly Total Investment</h2>
           </div>
           <div className="diagram-frame">
             <YearlyTotalInvestment />

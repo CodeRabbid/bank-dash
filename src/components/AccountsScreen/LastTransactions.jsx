@@ -1,7 +1,7 @@
 import "./LastTransactions.css";
-import SpotifyIcon from "../assets/spotify-icon.svg";
-import MobileServiceIcon from "../assets/mobile-service-icon.svg";
-import PersonIcon from "../assets/person-icon.svg";
+import SpotifyIcon from "../../assets/spotify-icon.svg";
+import MobileServiceIcon from "../../assets/mobile-service-icon.svg";
+import PersonIcon from "../../assets/person-icon.svg";
 
 const USDollar = new Intl.NumberFormat("en-US", {
   style: "currency",

@@ -1,9 +1,9 @@
 import "./BankServicesList.css";
-import BankLoansIcon from "../assets/bank-loans-icon.svg";
-import ChekcingAccountsIcon from "../assets/checking-accounts-icon.svg";
-import SavingsAccountsIcon from "../assets/savings-accounts-icon.svg";
-import DebitAndCreditCardsIcon from "../assets/debit-and-scredit-cards-icon.svg";
-import LifeInsuranceIcon from "../assets/life-insurance-icon-1.svg";
+import BankLoansIcon from "../../assets/bank-loans-icon.svg";
+import ChekcingAccountsIcon from "../../assets/checking-accounts-icon.svg";
+import SavingsAccountsIcon from "../../assets/savings-accounts-icon.svg";
+import DebitAndCreditCardsIcon from "../../assets/debit-and-scredit-cards-icon.svg";
+import LifeInsuranceIcon from "../../assets/life-insurance-icon-1.svg";
 
 const services = [
   {

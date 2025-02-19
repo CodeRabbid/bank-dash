@@ -1,5 +1,5 @@
 import "./SecurityScreen.css";
-import Toggle from "../components/Toggle";
+import Toggle from "../Common/Toggle";
 
 export default function SecurityScreen() {
   return (

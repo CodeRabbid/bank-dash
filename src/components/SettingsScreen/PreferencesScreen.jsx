@@ -1,4 +1,4 @@
-import Toggle from "../components/Toggle";
+import Toggle from "../Common/Toggle";
 import "./PreferencesScreen.css";
 
 export default function PreferencesScreen() {

@@ -51,8 +51,8 @@ const options = {
   },
 };
 
-const ExpenseStatisticsChart = () => {
+const ExpenseStatistics = () => {
   return <Pie options={options} data={data} />;
 };
 
-export default ExpenseStatisticsChart;
+export default ExpenseStatistics;

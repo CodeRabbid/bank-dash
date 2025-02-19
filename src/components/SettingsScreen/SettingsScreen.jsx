@@ -1,4 +1,4 @@
-import SettingsTabs from "../components/SettingsTabs";
+import SettingsTabs from "./SettingsTabs";
 import "./SettingsScreen.css";
 import { useState } from "react";
 

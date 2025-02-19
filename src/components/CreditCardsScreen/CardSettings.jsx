@@ -1,9 +1,9 @@
 import "./CardSettings.css";
 import React from "react";
-import BlockCard from "../assets/block-card.svg";
-import ChangePinIcon from "../assets/change-pin-icon.svg";
-import GooglePlayIcon from "../assets/google-play-icon.svg";
-import ApplePayIcon from "../assets/apple-pay-icon.jpg";
+import BlockCard from "../../assets/block-card.svg";
+import ChangePinIcon from "../../assets/change-pin-icon.svg";
+import GooglePlayIcon from "../../assets/google-play-icon.svg";
+import ApplePayIcon from "../../assets/apple-pay-icon.jpg";
 
 const settings = [
   {

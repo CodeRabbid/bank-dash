@@ -8,17 +8,17 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import DashboardScreen from "./screens/DashboardScreen.jsx";
-import TransactionsScreen from "./screens/TransactionsScreen.jsx";
-import AccountsScreen from "./screens/AccountsScreen.jsx";
-import InvestmentsScreen from "./screens/InvestmentsScreen.jsx";
-import CreditCardsScreen from "./screens/CreditCardsScreen.jsx";
-import LoansScreen from "./screens/LoansScreen.jsx";
-import ServicesScreen from "./screens/ServicesScreen.jsx";
-import SettingsScreen from "./screens/SettingsScreen.jsx";
-import EditProfileScreen from "./screens/EditProfileScreen.jsx";
-import PreferencesScreen from "./screens/PreferencesScreen.jsx";
-import SecurityScreen from "./screens/SecurityScreen.jsx";
+import DashboardScreen from "./components/DashboardScreen/DashboardScreen.jsx";
+import TransactionsScreen from "./components/TransactionsScreen/TransactionsScreen.jsx";
+import AccountsScreen from "./components/AccountsScreen/AccountsScreen.jsx";
+import InvestmentsScreen from "./components/InvestmentsScreen/InvestmentsScreen.jsx";
+import CreditCardsScreen from "./components/CreditCardsScreen/CreditCardsScreen.jsx";
+import LoansScreen from "./components/LoansScreen/LoansScreen.jsx";
+import ServicesScreen from "./components/ServicesScreen/ServicesScreen.jsx";
+import SettingsScreen from "./components/SettingsScreen/SettingsScreen.jsx";
+import EditProfileScreen from "./components/SettingsScreen/EditProfileScreen.jsx";
+import PreferencesScreen from "./components/SettingsScreen/PreferencesScreen.jsx";
+import SecurityScreen from "./components/SettingsScreen/SecurityScreen.jsx";
 
 const router = createHashRouter(
   createRoutesFromElements(

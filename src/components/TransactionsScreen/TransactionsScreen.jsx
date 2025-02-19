@@ -1,8 +1,8 @@
 import "./TransactionsScreen.css";
 import React from "react";
-import CreditCard from "../components/CreditCard.jsx";
-import MyExpense from "../components/MyExpense.jsx";
-import RecentTransactions from "../components/RecentTransactions.jsx";
+import CreditCard from "../Common/CreditCard.jsx";
+import MyExpense from "./MyExpense.jsx";
+import RecentTransactions from "./RecentTransactions.jsx";
 
 export default function TransactionsScreen() {
   return (

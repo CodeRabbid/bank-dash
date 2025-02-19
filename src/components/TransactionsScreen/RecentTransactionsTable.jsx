@@ -1,6 +1,6 @@
 import "./RecentTransactionsTable.css";
 import { DataGrid } from "@mui/x-data-grid";
-import ArrowUp from "../assets/arrow-down.svg?react";
+import ArrowUp from "../../assets/arrow-down.svg?react";
 
 function getWindowWidth() {
   const { innerWidth: width } = window;

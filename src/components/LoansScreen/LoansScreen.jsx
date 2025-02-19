@@ -1,10 +1,10 @@
 import "./LoanScreen.css";
-import SmallSection from "../components/SmallSection";
-import BusinessLoansIcon from "../assets/business-loans-icon.svg";
-import CorporateLoansIcon from "../assets/corporate-loans-icon.svg";
-import CustomLoansIcon from "../assets/custom-loans-icon.svg";
-import PersonalLoansIcon from "../assets/personal-loans-icon.svg";
-import ActiveLoansOverview from "../components/ActiveLoansOverview";
+import SmallSection from "../Common/SmallSection";
+import BusinessLoansIcon from "../../assets/business-loans-icon.svg";
+import CorporateLoansIcon from "../../assets/corporate-loans-icon.svg";
+import CustomLoansIcon from "../../assets/custom-loans-icon.svg";
+import PersonalLoansIcon from "../../assets/personal-loans-icon.svg";
+import ActiveLoansOverview from "./ActiveLoansOverview";
 
 export default function LoansScreen() {
   return (

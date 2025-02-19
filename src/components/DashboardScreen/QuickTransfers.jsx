@@ -1,7 +1,7 @@
-import ArrowRight from "../assets/arrow-right.svg?react";
+import ArrowRight from "../../assets/arrow-right.svg?react";
 import { useState } from "react";
 import "./QuickTransfers.css";
-import Airplane from "../assets/airplane.svg?react";
+import Airplane from "../../assets/airplane.svg?react";
 
 const profiles = [
   {
