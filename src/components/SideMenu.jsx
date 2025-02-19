@@ -68,15 +68,19 @@ export default function SideMenu({ toggleDisplaySidMenu }) {
 }
 
 const SideMenuButton = ({ path, Icon, text, toggleDisplaySidMenu }) => {
-  const classNameFunc = () =>
-    location.pathname === path ? "sidebar-button active" : "sidebar-button";
+  const pMatchesCurrentPath = (p) => {
+    if (p === "/") return location.pathname === p;
+    else return location.pathname.startsWith(p);
+  };
 
   const location = useLocation();
   return (
     <>
       <NavLink
         to={path}
-        className={classNameFunc}
+        className={
+          pMatchesCurrentPath(path) ? "sidebar-button active" : "sidebar-button"
+        }
         onClick={() => toggleDisplaySidMenu()}
       >
         <li className="side-menu-item" key={text}>
@@ -86,7 +90,7 @@ const SideMenuButton = ({ path, Icon, text, toggleDisplaySidMenu }) => {
             }}
           >
             <Icon
-              fill={location.pathname === path ? "#2d60ff" : "#B1B1B1"}
+              fill={pMatchesCurrentPath(path) ? "#2d60ff" : "#B1B1B1"}
               style={{
                 marginLeft: 30,
                 width: 20,
