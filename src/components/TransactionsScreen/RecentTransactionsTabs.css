@@ -1,11 +1,11 @@
-.recent-transactions-tab-frame {
+.recent-transactions-tabs {
   border-bottom: solid 1px #ebeef2;
   position: relative;
   overflow: hidden;
-  --tab-widht: 1100px;
+  --tab-widht: 100px;
 }
 
-.recent-transactions-tab-button {
+.recent-transactions-tabs button {
   background-color: transparent;
   border: none;
   width: var(--tab-widht);
@@ -14,7 +14,7 @@
   color: #718ebf;
 }
 
-.recent-transactions-tab-indicator {
+.recent-transactions-tabs .indicator {
   position: absolute;
   bottom: -3px;
   border-radius: 6px;
@@ -23,18 +23,12 @@
   transition: 0.3s;
 }
 
-.recent-transactions-tab-frame
-  button:nth-child(1).active
-  ~ .recent-transactions-tab-indicator {
+.recent-transactions-tabs button:nth-child(1).active ~ .indicator {
   transform: translateX(calc(var(--tab-widht) * 0));
 }
-.recent-transactions-tab-frame
-  button:nth-child(2).active
-  ~ .recent-transactions-tab-indicator {
+.recent-transactions-tabs button:nth-child(2).active ~ .indicator {
   transform: translateX(calc(var(--tab-widht) * 1));
 }
-.recent-transactions-tab-frame
-  button:nth-child(3).active
-  ~ .recent-transactions-tab-indicator {
+.recent-transactions-tabs button:nth-child(3).active ~ .indicator {
   transform: translateX(calc(var(--tab-widht) * 2));
 }
