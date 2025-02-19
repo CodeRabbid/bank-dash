@@ -1,16 +1,9 @@
-.last-transaction-frame {
+.last-transaction .frame {
   background: white;
   display: block;
-  width: 100%;
   max-width: 800px;
   padding: 10px;
-  border-radius: 23px;
-}
-
-.last-transaction-content {
-  display: table;
-  width: 100%;
-  max-width: 800px;
+  border-radius: 20px;
 }
 
 .last-transaction .transaction {

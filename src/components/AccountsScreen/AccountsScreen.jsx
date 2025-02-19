@@ -32,11 +32,13 @@ export default function AccountsScreen() {
             />
           </div>
         </div>
-        <div className="box last-transaction" style={{ maxWidth: 700 }}>
+        <div className="box last-transaction-section">
           <div className="top-banner">
             <h2>Last Transaction</h2>
           </div>
-          <LastTransactions />
+          <div className="last-transaction">
+            <LastTransactions />
+          </div>
         </div>
         <div className="box my-cards" style={{ maxWidth: 250 }}>
           <div className="top-banner">
