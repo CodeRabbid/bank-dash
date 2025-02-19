@@ -8,8 +8,7 @@ body {
   background-color: #f5f7fa;
 }
 
-body,
-html {
+body {
   height: 100vh;
   overflow: scroll;
 }
