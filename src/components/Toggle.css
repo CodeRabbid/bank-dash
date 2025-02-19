@@ -1,0 +1,41 @@
+.preferences .checkbox-container {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.preferences .checkbox-container .label {
+  margin: 0px 0px 0px 20px;
+}
+
+.preferences .toggle {
+  background-color: #dfeaf2;
+  min-width: var(--toggle-width);
+  height: var(--toggle-height);
+  border-radius: var(--toggle-height);
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.preferences .toggle::before {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: var(--toggle-circle);
+  min-width: var(--toggle-circle);
+  height: var(--toggle-circle);
+  border-radius: var(--toggle-circle);
+  margin: var(--toggle-border);
+  transition: 0.2s;
+}
+.preferences input:checked + .toggle {
+  background-color: #16dbcc;
+}
+
+.preferences input:checked + .toggle::before {
+  transform: translateX(calc(var(--toggle-width) / 2));
+}
+.preferences .toggle-input {
+  display: none;
+}
