@@ -5,7 +5,6 @@ import InvestmentIcon from "../assets/investment-icon.svg?react";
 import CreditCardIcon from "../assets/credit-card-icon.svg?react";
 import LoansIcon from "../assets/loan-icon.svg?react";
 import ServiceIcon from "../assets/service-icon.svg?react";
-import EconomicsIcon from "../assets/econometrics-icon.svg?react";
 import SettingsSolidIcon from "../assets/settings-solid-icon.svg?react";
 
 import { NavLink } from "react-router-dom";

@@ -1,0 +1,41 @@
+.recent-transactions-tab-frame {
+  border-bottom: solid 1px #ebeef2;
+  position: relative;
+  overflow: hidden;
+  --tab-widht: 120px;
+}
+
+.recent-transactions-tab-button {
+  background-color: transparent;
+  border: none;
+  width: var(--tab-widht);
+  font-size: 13px;
+  height: 30px;
+  color: #718ebf;
+}
+
+.recent-transactions-tab-indicator {
+  position: absolute;
+  left: 10px;
+  bottom: -3px;
+  border-radius: 6px;
+  border: solid 3px #1814f3;
+  width: calc(var(--tab-widht) - 26px);
+  transition: 0.3s;
+}
+
+.recent-transactions-tab-frame
+  .recent-transactions-tab-link:nth-child(1).active
+  ~ .recent-transactions-tab-indicator {
+  transform: translateX(calc(var(--tab-widht) * 0));
+}
+.recent-transactions-tab-frame
+  .recent-transactions-tab-link:nth-child(2).active
+  ~ .recent-transactions-tab-indicator {
+  transform: translateX(calc(var(--tab-widht) * 1));
+}
+.recent-transactions-tab-frame
+  .recent-transactions-tab-link:nth-child(3).active
+  ~ .recent-transactions-tab-indicator {
+  transform: translateX(calc(var(--tab-widht) * 2));
+}

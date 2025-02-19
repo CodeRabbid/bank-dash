@@ -1,5 +1,16 @@
-import React from "react";
+import SettingsTabs from "../components/SettingsTabs";
+import "./SettingsScreen.css";
+import { useState } from "react";
+
+import { Outlet } from "react-router-dom";
 
 export default function SettingsScreen() {
-  return <div>SettingsScreen</div>;
+  return (
+    <div className="settings-screen">
+      <div className="frame">
+        <SettingsTabs />
+        <Outlet />
+      </div>
+    </div>
+  );
 }
