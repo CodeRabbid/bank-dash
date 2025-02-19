@@ -1,7 +1,10 @@
 .three-cards-section {
   max-width: 720px;
-  overflow: scroll;
   margin: 25px;
+}
+
+.cards {
+  overflow: scroll;
 }
 
 .card-expese-statistics-section {
