@@ -2,13 +2,13 @@
   border-bottom: solid 1px #ebeef2;
   position: relative;
   overflow: hidden;
-  --tab-widht: 100px;
+  --tab-width: 100px;
 }
 
 .settings-tabs .button {
   background-color: transparent;
   border: none;
-  width: var(--tab-widht);
+  width: var(--tab-width);
   font-size: 13px;
   height: 30px;
   color: #718ebf;
@@ -20,16 +20,16 @@
   bottom: -3px;
   border-radius: 6px;
   border: solid 3px #1814f3;
-  width: calc(var(--tab-widht) - 6px);
+  width: calc(var(--tab-width) - 6px);
   transition: 0.3s;
 }
 
 .settings-tabs .link:nth-child(1).active ~ .indicator {
-  transform: translateX(calc(var(--tab-widht) * 0));
+  transform: translateX(calc(var(--tab-width) * 0));
 }
 .settings-tabs .link:nth-child(2).active ~ .indicator {
-  transform: translateX(calc(var(--tab-widht) * 1));
+  transform: translateX(calc(var(--tab-width) * 1));
 }
 .settings-tabs .link:nth-child(3).active ~ .indicator {
-  transform: translateX(calc(var(--tab-widht) * 2));
+  transform: translateX(calc(var(--tab-width) * 2));
 }
