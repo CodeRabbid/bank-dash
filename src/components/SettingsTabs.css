@@ -2,7 +2,7 @@
   border-bottom: solid 1px #ebeef2;
   position: relative;
   overflow: hidden;
-  --tab-widht: 120px;
+  --tab-widht: 90px;
 }
 
 .recent-transactions-tab-button {
@@ -16,11 +16,11 @@
 
 .recent-transactions-tab-indicator {
   position: absolute;
-  left: 10px;
+  left: 0px;
   bottom: -3px;
   border-radius: 6px;
   border: solid 3px #1814f3;
-  width: calc(var(--tab-widht) - 26px);
+  width: calc(var(--tab-widht) - 6px);
   transition: 0.3s;
 }
 
