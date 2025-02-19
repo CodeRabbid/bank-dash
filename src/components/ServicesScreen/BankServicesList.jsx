@@ -34,7 +34,7 @@ const services = [
 
 export default function BankServicesList() {
   return (
-    <>
+    <div className="bank-services-list">
       {services.map((service) => (
         <div className="frame">
           <table>
@@ -67,6 +67,6 @@ export default function BankServicesList() {
           </table>
         </div>
       ))}
-    </>
+    </div>
   );
 }

@@ -30,9 +30,8 @@ export default function ServicesScreen() {
           <div className="top-banner">
             <h2>Bank Services List</h2>
           </div>
-          <div className="bank-services-list">
-            <BankServicesList />
-          </div>
+
+          <BankServicesList />
         </div>
       </div>
     </div>
