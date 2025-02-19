@@ -5,16 +5,15 @@ import { useLocation } from "react-router-dom";
 export default function SettingsTabs() {
   const location = useLocation();
   return (
-    <div className="recent-transactions-tab-frame">
+    <div className="settings-tabs">
       <NavLink
         to={""}
         className={
-          "recent-transactions-tab-link " +
-          (location.pathname === "/settings" ? "active" : "")
+          "link " + (location.pathname === "/settings" ? "active" : "")
         }
       >
         <button
-          className="recent-transactions-tab-button"
+          className="button"
           style={{
             color: location.pathname === "/settings" ? "#1814F3" : "#718EBF",
           }}
@@ -22,10 +21,10 @@ export default function SettingsTabs() {
           Edit Profile
         </button>
       </NavLink>
-      <NavLink to={"preferences"} className="recent-transactions-tab-link">
+      <NavLink to={"preferences"} className="link">
         <button
           className={
-            "recent-transactions-tab-button " +
+            "button " +
             (location.pathname === "/settings/preferences" ? "active" : "")
           }
           style={{
@@ -41,12 +40,11 @@ export default function SettingsTabs() {
       <NavLink
         to={"security"}
         className={
-          "recent-transactions-tab-link " +
-          (location.pathname === "/settings/security" ? "active" : "")
+          "link " + (location.pathname === "/settings/security" ? "active" : "")
         }
       >
         <button
-          className="recent-transactions-tab-button"
+          className="button"
           style={{
             color:
               location.pathname === "/settings/security"
@@ -57,7 +55,7 @@ export default function SettingsTabs() {
           Security
         </button>
       </NavLink>
-      <div className="recent-transactions-tab-indicator"></div>
+      <div className="indicator"></div>
     </div>
   );
 }
