@@ -23,7 +23,10 @@ function App() {
           <SideMenu toggleDisplaySidMenu={() => setDisplaySideMenu(false)} />
         </div>
         <div id="right-side">
-          <Header />
+          <Header
+            displaySideMenu={displaySideMenu}
+            setDisplaySideMenu={setDisplaySideMenu}
+          />
 
           <div>
             {displaySideMenu ? (

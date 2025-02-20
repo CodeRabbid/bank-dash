@@ -8,7 +8,7 @@ export default function TransactionsScreen() {
   return (
     <>
       <div className="wrapper">
-        <div className="box my-cards">
+        <div className="box my-cards-section">
           <div className="top-banner">
             <h2>My Cards</h2>
             <h3>+ Add Card</h3>

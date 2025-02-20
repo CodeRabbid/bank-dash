@@ -5,7 +5,7 @@ import MagnifyingGlass from "../assets/magnifying-glass.svg";
 import ProfilePicture from "../assets/profile-picture.svg";
 import { useLocation } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ displaySideMenu, setDisplaySideMenu }) {
   const location = useLocation();
   const pageTitle = () => {
     if (location.pathname === "/") return "Overview";
