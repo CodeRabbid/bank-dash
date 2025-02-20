@@ -1,4 +1,13 @@
-.middle-section .frame {
+.three-tiles {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.tile .frame {
   flex-grow: 1;
   display: flex;
   background-color: white;
@@ -11,14 +20,14 @@
   gap: 5px;
 }
 
-.middle-section .title {
+.tile .title {
   color: #718ebf;
   padding: 3px;
   font-size: 14px;
   white-space: nowrap;
 }
 
-.middle-section .amount {
+.tile .amount {
   color: #232323;
   font-weight: 600;
   font-size: 20px;
