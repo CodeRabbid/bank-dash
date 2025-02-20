@@ -1,4 +1,3 @@
-import "./WeeklyActivity.css";
 import {
   Chart as ChartJS,
   CategoryScale,

@@ -1,3 +1,17 @@
+h1 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
 .diagram-frame {
   min-width: 200px;
   flex-grow: 1;
