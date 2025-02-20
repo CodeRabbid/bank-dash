@@ -1,26 +1,12 @@
-.my-expense {
+.two-cards-section {
+  flex-basis: 200px;
   max-width: 500px;
 }
 
-.my-expense-container {
-  padding: 15px 10px 10px 15px;
-  min-width: 145px;
+.my-expense-section {
+  max-width: 500px;
 }
 
-.recent-transactions {
+.recent-transactions-section {
   max-width: 100%;
-}
-
-.recent-transactions-table-container {
-  padding: 15px 30px 10px 25px;
-  min-width: 145px;
-  max-width: 100%;
-}
-
-.recent-transactions-frame {
-  background-color: white;
-  border-radius: 20px;
-  min-width: 185px;
-  margin: 10px 0px 0px 0px;
-  position: relative;
 }

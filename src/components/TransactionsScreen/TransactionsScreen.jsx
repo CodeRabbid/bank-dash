@@ -18,17 +18,13 @@ export default function TransactionsScreen() {
             <CreditCard theme="light" />
           </div>
         </div>
-        <div className="box my-expense">
+        <div className="box my-expense-section">
           <div className="top-banner">
             <h2>My Expense</h2>
           </div>
-          <div className="bar-chart-frame">
-            <div className="my-expense-container">
-              <MyExpense />
-            </div>
-          </div>
+          <MyExpense />
         </div>
-        <div className="box recent-transactions">
+        <div className="box recent-transactions-section">
           <div className="top-banner">
             <h2>Recent Transactions</h2>
           </div>

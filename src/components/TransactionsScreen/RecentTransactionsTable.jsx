@@ -23,17 +23,11 @@ const columns = [
     sortable: false,
     renderCell: (params) => (
       <>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "start",
-            alignItems: "center",
-          }}
-        >
+        <div className="first-cell">
           <ArrowUp
+            className="arrow"
             style={{
               minWidth: 30,
-              margin: "5px 5px 5px 0px",
               rotate: params.value.up ? "0deg" : "180deg",
             }}
           />
@@ -238,26 +232,27 @@ export default function RecentTransactionsTable({ tab }) {
   });
 
   return (
-    <DataGrid
-      disableRowSelectionOnClick
-      rows={showRows}
-      columns={showCols}
-      initialState={{ pagination: { paginationModel } }}
-      pageSizeOptions={[5, 10]}
-      rowHeight={55}
-      sx={{
-        "& .MuiDataGrid-columnHeader": {
-          color: "#718EBF",
-        },
-        "& .MuiDataGrid-row:hover": {
-          backgroundColor: "inherit",
-        },
-        "& .MuiDataGrid-cell": {
-          borderBottom: "solid 1px #F2F4F7",
-          // add more css for customization
-        },
-        border: "none",
-      }}
-    />
+    <div className="frame">
+      <DataGrid
+        disableRowSelectionOnClick
+        rows={showRows}
+        columns={showCols}
+        initialState={{ pagination: { paginationModel } }}
+        pageSizeOptions={[5, 10]}
+        rowHeight={55}
+        sx={{
+          "& .MuiDataGrid-columnHeader": {
+            color: "#718EBF",
+          },
+          "& .MuiDataGrid-row:hover": {
+            backgroundColor: "inherit",
+          },
+          "& .MuiDataGrid-cell": {
+            borderBottom: "solid 1px #F2F4F7",
+          },
+          border: "none",
+        }}
+      />
+    </div>
   );
 }

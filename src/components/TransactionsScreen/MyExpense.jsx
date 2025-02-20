@@ -70,10 +70,7 @@ export default function MyExpense() {
     },
     layout: {
       padding: {
-        top: 25,
-        right: 10,
-        bottom: 15,
-        left: 10,
+        top: 10,
       },
     },
     scales: {
@@ -112,5 +109,9 @@ export default function MyExpense() {
       },
     ],
   };
-  return <Bar options={options} data={data} />;
+  return (
+    <div className="diagram-frame">
+      <Bar options={options} data={data} />
+    </div>
+  );
 }

@@ -5,7 +5,7 @@
   --tab-width: 100px;
 }
 
-.recent-transactions-tabs button {
+.recent-transactions-tabs .button {
   background-color: transparent;
   border: none;
   width: var(--tab-width);

@@ -1,3 +1,4 @@
+import "./RecentTransactions.css";
 import React, { useState } from "react";
 import RecentTransactionsTabs from "./RecentTransactionsTabs.jsx";
 import RecentTransactionsTable from "./RecentTransactionsTable.jsx";
@@ -10,10 +11,8 @@ export default function RecentTransactions() {
       <div className="recent-transactions-tabs">
         <RecentTransactionsTabs tab={tab} setTab={setTab} />
       </div>
-      <div className="recent-transactions-frame">
-        <div className="recent-transactions-table-container">
-          <RecentTransactionsTable tab={tab} />
-        </div>
+      <div className="recent-transactions-table">
+        <RecentTransactionsTable tab={tab} />
       </div>
     </div>
   );

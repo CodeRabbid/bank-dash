@@ -1,4 +1,15 @@
-.receipt-button {
+.recent-transactions-table .first-cell {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.recent-transactions-table .arrow {
+  min-width: 30;
+  margin: 5px 5px 5px 0px;
+}
+
+.recent-transactions-table .receipt-button {
   background-color: white;
   height: 35px;
   width: 100px;
@@ -7,7 +18,7 @@
   color: #123288;
 }
 
-.receipt-button:hover {
+.recent-transactions-table .receipt-button:hover {
   border: solid 1px #1814f3;
   color: #1814f3;
 }
