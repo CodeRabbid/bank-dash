@@ -12,34 +12,36 @@ const USDollar = new Intl.NumberFormat("en-US", {
 
 export default function LastTransactions() {
   return (
-    <div className="frame">
-      <LastTransaction
-        icon={SpotifyIcon}
-        title={"Spotify Subscription"}
-        date={"25 Jan 2025"}
-        type={"Shopping"}
-        card={"1234 ****"}
-        status={"Pending"}
-        amount={-150}
-      />
-      <LastTransaction
-        icon={MobileServiceIcon}
-        title={"Mobile Service"}
-        date={"25 Jan 2025"}
-        type={"Service"}
-        card={"1234 ****"}
-        status={"Completed"}
-        amount={-340}
-      />
-      <LastTransaction
-        icon={PersonIcon}
-        title={"Emilly Wilson"}
-        date={"25 Jan 2025"}
-        type={"Transfer"}
-        card={"1234 ****"}
-        status={"Completed"}
-        amount={780}
-      />
+    <div className="last-transaction">
+      <div className="frame">
+        <LastTransaction
+          icon={SpotifyIcon}
+          title={"Spotify Subscription"}
+          date={"25 Jan 2025"}
+          type={"Shopping"}
+          card={"1234 ****"}
+          status={"Pending"}
+          amount={-150}
+        />
+        <LastTransaction
+          icon={MobileServiceIcon}
+          title={"Mobile Service"}
+          date={"25 Jan 2025"}
+          type={"Service"}
+          card={"1234 ****"}
+          status={"Completed"}
+          amount={-340}
+        />
+        <LastTransaction
+          icon={PersonIcon}
+          title={"Emilly Wilson"}
+          date={"25 Jan 2025"}
+          type={"Transfer"}
+          card={"1234 ****"}
+          status={"Completed"}
+          amount={780}
+        />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import "./LoanScreen.css";
-import SmallSection from "../Common/SmallSection";
+import SmallSection from "../Common/Tile";
 import BusinessLoansIcon from "../../assets/business-loans-icon.svg";
 import CorporateLoansIcon from "../../assets/corporate-loans-icon.svg";
 import CustomLoansIcon from "../../assets/custom-loans-icon.svg";

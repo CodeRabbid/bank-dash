@@ -7,7 +7,7 @@
   gap: 20px;
 }
 
-.tile .frame {
+.larger-tile .frame {
   flex-grow: 1;
   display: flex;
   background-color: white;
@@ -20,14 +20,14 @@
   gap: 5px;
 }
 
-.tile .title {
+.larger-tile .title {
   color: #718ebf;
   padding: 3px;
   font-size: 14px;
   white-space: nowrap;
 }
 
-.tile .amount {
+.larger-tile .amount {
   color: #232323;
   font-weight: 600;
   font-size: 20px;

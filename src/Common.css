@@ -7,3 +7,9 @@
   border-radius: 20px;
   position: relative;
 }
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}

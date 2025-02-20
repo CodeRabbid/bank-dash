@@ -1,0 +1,13 @@
+.two-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.four-tiles {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}

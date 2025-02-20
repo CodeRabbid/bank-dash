@@ -30,7 +30,7 @@ export default function ThreeTiles() {
 
 const Tile = ({ title, amount, Icon }) => {
   return (
-    <div className="tile">
+    <div className="larger-tile">
       <div className="frame">
         <div>
           <img src={Icon} width={60} />

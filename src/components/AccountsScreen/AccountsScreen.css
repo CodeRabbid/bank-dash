@@ -1,29 +1,8 @@
-.small-section-frame {
-  flex-grow: 1;
-  display: flex;
-  background-color: white;
-  border-radius: 20px;
-  max-width: 220px;
-  padding: 15px;
-  align-items: center;
-  gap: 5px;
-}
-
-.four-small-sections {
+.four-tiles-section {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
 }
 
-.two-small-sections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.debit-credit-overview {
+.debit-credit-overview-section {
   min-width: 200px;
   max-width: 520px;
 }
@@ -44,4 +23,8 @@
   max-width: 700px;
   min-width: 300px;
   flex: 1 1 300px;
+}
+
+.my-card-section {
+  max-width: 250px;
 }
