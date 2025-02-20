@@ -1,3 +1,4 @@
+import "./ExpenseStatistics.css";
 import { Chart as ChartJS } from "chart.js";
 import { Pie } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
@@ -52,7 +53,13 @@ const options = {
 };
 
 const ExpenseStatistics = () => {
-  return <Pie options={options} data={data} />;
+  return (
+    <div className="expense-statistics">
+      <div className="frame">
+        <Pie options={options} data={data} />
+      </div>
+    </div>
+  );
 };
 
 export default ExpenseStatistics;

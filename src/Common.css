@@ -8,8 +8,37 @@
   position: relative;
 }
 
+.my-cards-section {
+  max-width: 480px;
+  overflow: scroll;
+}
+
 .cards {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  overflow: scroll;
+}
+
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 3px;
+  color: #343c6a;
+  font-weight: 900;
+}
+
+.wrapper {
+  margin: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex-grow: 1;
+  flex-shrink: 1;
 }

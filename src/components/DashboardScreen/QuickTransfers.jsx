@@ -71,81 +71,85 @@ const payee_profile_width = 70;
 const QuickTransfers = () => {
   const [pos, setPos] = useState(0);
   return (
-    <div style={{}}>
-      <div
-        className="slider"
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-around",
-        }}
-      >
-        <button
-          disabled={pos == 0}
-          className="arrow-button"
-          style={{ position: "relative" }}
-          onClick={() => {
-            setPos(pos - 1);
-          }}
-        >
-          <ArrowRight style={{ rotate: "180deg" }} />
-        </button>
-        <div
-          className="slider-content"
-          style={{
-            position: "relative",
-            height: 110,
-            maxWidth: (payee_profile_width + 2) * 3 * 1,
-            minWidth: (payee_profile_width + 2) * 3 * 1,
-            overflow: "hidden",
-          }}
-        >
+    <div className="quick-transfer">
+      <div className="frame">
+        <div style={{}}>
           <div
-            className="all-payees"
+            className="slider"
             style={{
-              transition: "transform .4s ease",
-              transform: `translateX(${
-                pos * -(payee_profile_width + 2) * 3
-              }px)`,
-              width: (payee_profile_width + 2) * profiles.length,
+              width: "100%",
+              display: "flex",
+              justifyContent: "space-around",
             }}
           >
-            {profiles.map((profile) => (
+            <button
+              disabled={pos == 0}
+              className="arrow-button"
+              style={{ position: "relative" }}
+              onClick={() => {
+                setPos(pos - 1);
+              }}
+            >
+              <ArrowRight style={{ rotate: "180deg" }} />
+            </button>
+            <div
+              className="slider-content"
+              style={{
+                position: "relative",
+                height: 110,
+                maxWidth: (payee_profile_width + 2) * 3 * 1,
+                minWidth: (payee_profile_width + 2) * 3 * 1,
+                overflow: "hidden",
+              }}
+            >
               <div
-                className="payee-summary"
-                style={{ width: payee_profile_width }}
-                key={profile.picture_url}
+                className="all-payees"
+                style={{
+                  transition: "transform .4s ease",
+                  transform: `translateX(${
+                    pos * -(payee_profile_width + 2) * 3
+                  }px)`,
+                  width: (payee_profile_width + 2) * profiles.length,
+                }}
               >
-                <ShortProfile
-                  name={profile.name}
-                  role={profile.role}
-                  picture_url={profile.picture_url}
-                />
+                {profiles.map((profile) => (
+                  <div
+                    className="payee-summary"
+                    style={{ width: payee_profile_width }}
+                    key={profile.picture_url}
+                  >
+                    <ShortProfile
+                      name={profile.name}
+                      role={profile.role}
+                      picture_url={profile.picture_url}
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <button
+              disabled={pos == Math.round(profiles.length / 3) - 1}
+              className="arrow-button"
+              style={{ position: "relative" }}
+              onClick={() => {
+                setPos(pos + 1);
+              }}
+            >
+              <ArrowRight />
+            </button>
           </div>
-        </div>
-        <button
-          disabled={pos == Math.round(profiles.length / 3) - 1}
-          className="arrow-button"
-          style={{ position: "relative" }}
-          onClick={() => {
-            setPos(pos + 1);
-          }}
-        >
-          <ArrowRight />
-        </button>
-      </div>
-      <div className="send-amount">
-        <label htmlFor="amount" className="write-amount">
-          Write Amount
-        </label>
-        <div className="amount-frame">
-          <input className="amount-input" placeholder="0.00" id="amount" />
-          <button className="send-money-button" aria-label="search">
-            Send
-            <Airplane className="airplane" />
-          </button>
+          <div className="send-amount">
+            <label htmlFor="amount" className="write-amount">
+              Write Amount
+            </label>
+            <div className="amount-frame">
+              <input className="amount-input" placeholder="0.00" id="amount" />
+              <button className="send-money-button" aria-label="search">
+                Send
+                <Airplane className="airplane" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

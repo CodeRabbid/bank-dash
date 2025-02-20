@@ -1,4 +1,11 @@
-.amount-frame {
+.quick-transfer .frame {
+  padding: 20px 10px 20px 10px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.quick-transfer .amount-frame {
   background-color: #edf1f7;
   width: 170px;
   height: 40px;
@@ -9,7 +16,7 @@
   margin: 0px 0px 0px 0px;
 }
 
-.amount-input {
+.quick-transfer .amount-input {
   border: none;
   outline: none;
   background-color: #edf1f7;
@@ -19,7 +26,7 @@
   margin: 10px 10px 10px 20px;
 }
 
-.send-money-button {
+.quick-transfer .send-money-button {
   background-color: #1814f3;
   border: none;
   height: 40px;
@@ -32,30 +39,30 @@
   font-size: 12px;
 }
 
-.airplane {
+.quick-transfer .airplane {
   width: 17px;
   margin: 0px 0px 0px 10px;
 }
 
-.send-amount {
+.quick-transfer .send-amount {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.write-amount {
+.quick-transfer .write-amount {
   color: #718ebf;
   font-weight: 300;
   font-size: 13px;
 }
 
-.payee-summary {
+.quick-transfer .payee-summary {
   display: inline-flex;
   flex-direction: column;
   margin: 0px 1px 0px 1px;
 }
 
-.payee-name {
+.quick-transfer .payee-name {
   display: flex;
   justify-content: center;
   line-height: 10px;
@@ -63,7 +70,7 @@
   margin: 10px 0px 0px 0px;
 }
 
-.payee-role {
+.quick-transfer .payee-role {
   display: flex;
   justify-content: center;
   line-height: 30px;
@@ -71,28 +78,28 @@
   margin: 0px 0px 0px 0px;
 }
 
-.payee-profile-picture-container {
+.quick-transfer .payee-profile-picture-container {
   display: flex;
   justify-content: center;
 }
 
-.three-profiles {
+.quick-transfer .three-profiles {
   display: inline;
 }
 
-.all-payees {
+.quick-transfer .all-payees {
   overflow: visible;
   position: absolute;
 }
 
-.slider {
+.quick-transfer .slider {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-around;
 }
 
-.arrow-button {
+.quick-transfer .arrow-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,7 +111,7 @@
   width: 40px;
 }
 
-.arrow-button:disabled,
-.arrow-button[disabled] {
+.quick-transfer .arrow-button:disabled,
+.quick-transfer .arrow-button[disabled] {
   background-color: #eeeeee;
 }

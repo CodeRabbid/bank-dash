@@ -1,3 +1,4 @@
+import "./WeeklyActivity.css";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -34,14 +35,6 @@ const options = {
     },
     datalabels: {
       display: false,
-    },
-  },
-  layout: {
-    padding: {
-      top: 10,
-      right: 5,
-      bottom: 15,
-      left: 0,
     },
   },
   scales: {
@@ -96,7 +89,11 @@ const data = {
 };
 
 const WeeklyActicityDiagram = () => {
-  return <Bar options={options} data={data} />;
+  return (
+    <div className="diagram-frame">
+      <Bar options={options} data={data} />
+    </div>
+  );
 };
 
 export default WeeklyActicityDiagram;
