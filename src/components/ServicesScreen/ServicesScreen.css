@@ -1,3 +1,9 @@
+.three-small-sections {
+  display: flex;
+  overflow: scroll;
+  gap: 10px;
+}
+
 .bank-services-list-sections {
   max-width: 1000px;
 }
