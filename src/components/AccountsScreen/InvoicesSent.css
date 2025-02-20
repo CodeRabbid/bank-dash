@@ -1,0 +1,43 @@
+.invoices-sent .frame {
+  background-color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+}
+
+.invoices-sent .table {
+  display: table;
+}
+
+.invoice-short {
+  display: table-row;
+  height: 55px;
+}
+
+.invoice-short .cell {
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.invoice-short img {
+  height: 40px;
+  width: 40px;
+}
+
+.invoice-short .title {
+  color: #b1b1b1;
+  font-size: 14px;
+  margin: 4px 3px 3px 9px;
+}
+
+.invoice-short .date {
+  color: #718ebf;
+  font-size: 13px;
+  margin: 0px 3px 3px 9px;
+}
+
+.invoice-short .amount {
+  display: flex;
+  font-size: 13px;
+  color: #718ebf;
+}
