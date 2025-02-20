@@ -1,3 +1,4 @@
+import "./Header.css";
 import NotificationsIcon from "../assets/notifications-icon.svg";
 import SettingsIcon from "../assets/settings-icon.svg";
 import OptionsButton from "../assets/options-button.svg?react";
