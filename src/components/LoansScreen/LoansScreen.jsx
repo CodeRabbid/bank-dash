@@ -1,16 +1,15 @@
 import "./LoanScreen.css";
 import SmallSection from "../Common/Tile";
-import BusinessLoansIcon from "../../assets/business-loans-icon.svg";
-import CorporateLoansIcon from "../../assets/corporate-loans-icon.svg";
-import CustomLoansIcon from "../../assets/custom-loans-icon.svg";
-import PersonalLoansIcon from "../../assets/personal-loans-icon.svg";
+
 import ActiveLoansOverview from "./ActiveLoansOverview";
+import FourTiles from "./FourTiles";
 
 export default function LoansScreen() {
   return (
     <div className="wrapper">
-      <div className="box four-small-sections">
-        <div className="two-small-sections">
+      <div className="box four-tiles-section">
+        <FourTiles />
+        {/* <div className="two-small-sections">
           <SmallSection
             title={"Personal Loans"}
             amount={50000}
@@ -33,7 +32,7 @@ export default function LoansScreen() {
             amount={100000}
             Icon={CustomLoansIcon}
           />
-        </div>
+        </div> */}
       </div>
       <div className="box active-loans-overview-sections">
         <div className="top-banner">

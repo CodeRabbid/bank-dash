@@ -7,7 +7,7 @@ const USDollar = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 0,
 });
 
-const SmallSection = ({ title, amount, Icon }) => {
+const Tile = ({ title, amount, Icon }) => {
   return (
     <div className="tile">
       <div className="frame">
@@ -23,4 +23,4 @@ const SmallSection = ({ title, amount, Icon }) => {
   );
 };
 
-export default SmallSection;
+export default Tile;
