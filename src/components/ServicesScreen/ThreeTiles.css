@@ -1,14 +1,18 @@
-.service-section.frame {
+.service-section {
+  flex-grow: 1;
+  display: flex;
+  min-width: 200px;
+  max-width: 270px;
+}
+
+.service-section .frame {
   flex-grow: 1;
   display: flex;
   background-color: white;
   border-radius: 20px;
-  min-width: 200px;
-  max-width: 270px;
   padding: 15px;
   align-items: center;
   justify-content: center;
-  gap: 5px;
 }
 
 .service-section .title {

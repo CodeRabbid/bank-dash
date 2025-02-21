@@ -1,9 +1,9 @@
-.three-small-sections {
+.three-serivce-tiles-section {
   display: flex;
   overflow: scroll;
-  gap: 10px;
+  gap: 20px;
 }
 
-.bank-services-list-sections {
+.bank-services-list-section {
   max-width: 1000px;
 }
