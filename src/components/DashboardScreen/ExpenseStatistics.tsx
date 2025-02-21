@@ -26,7 +26,7 @@ const options = {
   plugins: {
     legend: {
       position: "top" as const,
-      align: "start" as const,
+      align: "center" as const,
       labels: {
         usePointStyle: true,
         pointStyle: "circle",
