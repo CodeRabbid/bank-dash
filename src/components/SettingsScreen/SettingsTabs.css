@@ -2,7 +2,7 @@
   border-bottom: solid 1px #ebeef2;
   position: relative;
   overflow: hidden;
-  --tab-width: 100px;
+  --tab-width: 90px;
 }
 
 .settings-tabs .button {

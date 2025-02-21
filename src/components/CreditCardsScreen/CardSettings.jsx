@@ -43,7 +43,7 @@ export default function CardSettings() {
               <>
                 <tr>
                   <td rowSpan="2">
-                    <img src={setting.icon} alt="" />
+                    <img src={setting.icon} alt="" width={50} />
                   </td>
                   <td className="title">{setting.title}</td>
                 </tr>
