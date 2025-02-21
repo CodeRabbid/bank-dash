@@ -21,7 +21,7 @@ export default function Header({ displaySideMenu, setDisplaySideMenu }) {
     else if (location.pathname.startsWith("/settings")) return "Settings";
   };
   return (
-    <div id="header-container">
+    <div className="header">
       <div
         className="center-content"
         style={{

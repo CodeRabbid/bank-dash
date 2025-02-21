@@ -1,4 +1,4 @@
-#left-side {
+.app #left-side {
   position: fixed;
   top: 0px;
   float: left;
@@ -8,11 +8,11 @@
   background-color: white;
 }
 
-#right-side {
+.app #right-side {
   margin-left: 231px;
 }
 
-.side-menu-container {
+.app .side-menu-container {
   position: fixed;
   top: 86px;
   z-index: 200;
@@ -22,43 +22,29 @@
   width: 230px;
 }
 
-#logo-container {
+.app #logo-container {
   height: 85px;
   display: flex;
   align-items: center;
   padding-left: 27px;
 }
 
-#header-container {
-  position: fixed;
-  top: 0px;
-  height: 85px;
-  display: flex;
-  width: calc(100% - 230px);
-  align-items: center;
-  border-bottom: 1px solid #e6eff5;
-  background-color: white;
-  z-index: 100000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.main-content {
+.app .main-content {
   margin-top: 106px;
 }
 
-#icon-text {
+.app #icon-text {
   margin-left: 9px;
 }
 
-.side-menu-item {
+.app .side-menu-item {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 55px;
 }
 
-.active li::before {
+.app .active li::before {
   content: "";
   height: 49px;
   width: 0px;
@@ -71,15 +57,15 @@
   justify-content: center;
 }
 
-.sidebar-button span {
+.app .sidebar-button span {
   color: #b1b1b1;
 }
 
-.active span {
+.app .active span {
   color: #2d60ff;
 }
 
-.options-button {
+.app .options-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,35 +76,32 @@
   background-color: white;
 }
 
-.options-button:hover {
+.app .options-button:hover {
   background-color: #f5f5f5;
 }
 
-.top-right-options {
+.app .top-right-options {
   display: flex;
   justify-content: end;
 }
 
 @media only screen and (max-width: 630px) {
-  #left-side {
+  .app #left-side {
     display: none;
   }
-  #right-side {
+  .app #right-side {
     margin: 0px;
-  }
-  #header-container {
-    width: 100%;
   }
 }
 
 @media only screen and (min-width: 631px) {
-  .options-button {
+  .app .options-button {
     display: none;
   }
-  .top-right-options {
+  .app .top-right-options {
     flex-grow: 1;
   }
-  .side-menu-container {
+  .app .side-menu-container {
     display: none;
   }
 }
