@@ -1,8 +1,21 @@
-# React + Vite
+# Welcome to BankDash repo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project is deployed on GitHub Pages, [here is the link](https://coderabbid.github.io/bank-dash)
 
-Currently, two official plugins are available:
+This is a purely frontend project, so it does not displaying any business logic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It was inspired by [a free UI Kit on Figma](https://www.figma.com/community/file/1323695683687017923/bankdash-dashboard-ui-kit-admin-template-dashboard-admin-dashboard)
+
+To run the project locally simply install the dependencies and start:
+
+```sh
+npm install
+```
+
+```sh
+npm start
+```
+
+Have fun!
+
+... and check out [my other projects](https://coderabbid.github.io/portfolio/#projects)!
